@@ -11,8 +11,10 @@ img, iframe {
 body {
   display: -ms-grid;
   display: grid;
+  position: relative;
   min-height: 100vh;
   overflow-x: hidden;
+  background-image: url(/images/mobilebackround.jpg);
 }
 
 .header-grid {
@@ -20,13 +22,15 @@ body {
   display: grid;
   -ms-grid-row-align: end;
       align-self: end;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  position: fixed;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   height: 75px;
   border-top: 1px solid black;
   min-width: 100%;
   background-color: #b8bab9;
   overflow-x: hidden;
+  opacity: 45%;
 }
 
 .header-grid img {
@@ -44,8 +48,30 @@ body {
       justify-self: end;
 }
 
+#phone {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 2.5px;
+  -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 13px;
+  text-align: center;
+  padding: 3px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #272727;
+}
+
+#phone a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+#phone:hover {
+  background-color: #686868;
+}
+
 #menubox input {
-  display: block;
   width: 50px;
   height: 40px;
   position: absolute;
@@ -70,26 +96,27 @@ body {
   height: 5px;
   background-color: #000000;
   z-index: 2;
-  -webkit-transform-origin: 4px 0px;
-          transform-origin: 4px 0px;
-  -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  -webkit-transform-origin: 0px 0px;
+          transform-origin: 0px 0px;
+  -webkit-transition: background 0.5s ease-in-out, opacity 0.55s ease, -webkit-transform 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out, opacity 0.55s ease, -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, background 0.5s ease-in-out, opacity 0.55s ease;
+  transition: transform 0.5s ease-in-out, background 0.5s ease-in-out, opacity 0.55s ease, -webkit-transform 0.5s ease-in-out;
 }
 
 #menu {
   display: -ms-grid;
   display: grid;
-  position: absolute;
+  position: fixed;
   border: 1px solid black;
   min-width: 99%;
-  background-color: white;
-  left: 0;
   bottom: 75px;
+  right: 0px;
+  background-color: white;
   text-align: center;
-  -webkit-transform: translate(-100%, 0);
-          transform: translate(-100%, 0);
+  z-index: 9;
+  -webkit-transform: translate(100%, 0);
+          transform: translate(100%, 0);
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
   transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
@@ -114,8 +141,8 @@ body {
 
 #menubox input:checked ~ #hamburger span {
   opacity: 1;
-  -webkit-transform: rotate(45deg) translate(4px, -3px);
-          transform: rotate(45deg) translate(4px, -3px);
+  -webkit-transform: rotate(45deg) translate(1px, -2px);
+          transform: rotate(45deg) translate(1px, -2px);
   background: #232323;
 }
 
@@ -126,8 +153,12 @@ body {
 }
 
 #menubox input:checked ~ #hamburger span:nth-child(3) {
-  -webkit-transform: rotate(-45deg) translate(-1px, 1px);
-          transform: rotate(-45deg) translate(-1px, 1px);
+  -webkit-transform: rotate(-45deg) translate(-3px, 1px);
+          transform: rotate(-45deg) translate(-3px, 1px);
+}
+
+#desktop_header {
+  display: none;
 }
 
 #page_footer {

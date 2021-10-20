@@ -1,3 +1,6 @@
+$fontcolor:whitesmoke;
+
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +13,8 @@ img, iframe {
 
 body {
     display: grid;
+    position: relative;
     min-height: 100vh;
     overflow-x: hidden;
+    background-image: url(/images/mobilebackround.jpg);
 }

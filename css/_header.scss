@@ -2,13 +2,14 @@
 .header-grid {
     display: grid;
     align-self: end;
-    grid-template-columns: 1fr 1fr;
+    position: fixed;
+    grid-template-columns: 1fr 1fr 1fr;
     height: 75px;
     border-top: 1px solid black;
     min-width: 100%;
     background-color: #b8bab9;
     overflow-x: hidden;
-
+    opacity: 45%;
      img {
          width: 75px;
          align-self: center;
@@ -18,11 +19,30 @@
     align-self: end;
     justify-self: end;
 }
+#phone {
+    display: grid;
+    row-gap: 2.5px;
+    align-self: center;
+    font-size: 13px;
+    text-align: center;
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #272727;
+    
+
+    a {
+        color: $fontcolor;
+        text-decoration: none;
+    }
+}
+#phone:hover {
+    background-color: #686868;
+}
 
 #menubox {
   
     input {
-        display: block;
         width: 50px;
         height: 40px;
         position: absolute;
@@ -47,24 +67,26 @@
         height: 5px;
         background-color: #000000;
         z-index: 2;
-        transform-origin: 4px 0px;
+        transform-origin: 0px 0px;
   
-        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+        transition: transform 0.5s ease-in-out,
+              background 0.5s ease-in-out,
               opacity 0.55s ease;
 
     }
 }
 #menu {
     display: grid;
-    position: absolute;
+    position: fixed;
     border: 1px solid black;
     min-width: 99%;
-    background-color: white;
-    left: 0;
     bottom: 75px;
+    right: 0px;
+    background-color: white;
     text-align: center;
-    transform: translate(-100%, 0);
+    z-index: 9;
+    
+    transform: translate(100%, 0);
     transition: transform 0.5s ease-in-out;
 
 
@@ -90,7 +112,7 @@
 #menubox input:checked ~ #hamburger span
 {
   opacity: 1;
-  transform: rotate(45deg) translate(4px, -3px);
+  transform: rotate(45deg) translate(1px, -2px);
   background: #232323;
 }
 
@@ -102,5 +124,9 @@
 
 #menubox input:checked ~ #hamburger span:nth-child(3)
 {
-  transform: rotate(-45deg) translate(-1px, 1px);
+  transform: rotate(-45deg) translate(-3px, 1px);
+}
+
+#desktop_header {
+    display: none;
 }
