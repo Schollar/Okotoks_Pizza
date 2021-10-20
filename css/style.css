@@ -194,10 +194,12 @@ img, iframe {
   place-items: center;
 }
 
-body {
+#page_container {
   display: -ms-grid;
   display: grid;
   position: relative;
+  -ms-grid-rows: 35px 1fr 1fr;
+      grid-template-rows: 35px 1fr 1fr;
   min-height: 100vh;
   overflow-x: hidden;
   background-color: #D8C3A5;
@@ -207,10 +209,11 @@ body {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: column;
-  justify-items: center;
   min-width: 100%;
+  place-items: center;
   height: 35px;
   background-color: #EAE7DCaa;
+  color: #E85A4F;
 }
 
 #logo img {
@@ -224,5 +227,22 @@ body {
   font-weight: 700;
   font-size: 14px;
   margin-top: 2px;
+}
+
+#top_content {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+#top_content img {
+  width: 95%;
+}
+
+#top_content a {
+  text-decoration: none;
+  color: #E85A4F;
+  font-family: Oswald;
+  font-weight: 600;
 }
 /*# sourceMappingURL=style.css.map */

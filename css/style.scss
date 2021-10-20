@@ -3,9 +3,10 @@
 @import 'footer';
 
 
-body {
+#page_container {
     display: grid;
     position: relative;
+    grid-template-rows: 35px 1fr 1fr;
     min-height: 100vh;
     overflow-x: hidden;
     background-color: $bgcolor;
@@ -14,10 +15,11 @@ body {
 #logo {
     display: grid;
     grid-auto-flow: column;
-    justify-items: center;
     min-width: 100%;
+    place-items: center;
     height: 35px;
     background-color: $eggshellthru;
+    color: $fontcolor;
 
     img {
         width: 75px;
@@ -31,5 +33,21 @@ body {
         font-size: 14px;
         margin-top: 2px;
 
+    }
+}
+
+#top_content {
+    display: grid;
+    justify-items: center;
+
+    img {
+        width: 95%;
+    }
+
+    a {
+        text-decoration: none;
+        color: $fontcolor;
+        font-family: Oswald;
+        font-weight: 600;
     }
 }
