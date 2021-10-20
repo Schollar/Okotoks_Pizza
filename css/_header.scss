@@ -6,9 +6,8 @@
     position: fixed;
     grid-template-columns: 2fr 1fr;
     height: 60px;
-    border-top: 1px solid black;
     min-width: 100%;
-    background-color: #dccd9e;
+    background-color: $eggshellthru;
     overflow-x: hidden;
      img {
          width: 75px;
@@ -27,20 +26,25 @@
         color: $fontcolor;
         font-weight: 800;
         text-decoration: none;
-        background-color: #dccd9e;
+        background-color: $eggshell;
         place-self: center;
         max-width: 125px;
+        margin: 3px;
+        padding-top: 2px;
         width: 50%;
-        padding: 3px;
         font-size: 13px;
+        border-radius: 9px;
+        height: 20px;
+        box-shadow: 1px 1px 4px 0px #E85A4F;
 
         &:hover {
-            background-color: #8E8D8A;
+            background-color: $eggshellthru;
         }
     }
     p {
         font-size: 11px;
-        font-weight: 600;
+        color: $fontcolor;
+        font-weight: 700;
         text-align: center;
         margin-left: 10px;
     }
@@ -53,7 +57,7 @@
         width: 50px;
         height: 40px;
         position: absolute;
-        right: 0px;
+        right: 13px;
         bottom: 12px;
         opacity: 0;
         z-index: 10;
@@ -67,12 +71,12 @@
         span {       
         display: block;
         position: relative;
-        bottom: 12px;
-        right: 9px;
+        bottom: 15px;
+        right: 20px;
         margin-bottom: 5px;
         width: 33px;
         height: 5px;
-        background-color: #000000;
+        background-color: $fontcolorthru;
         z-index: 2;
         transform-origin: 0px 0px;
   
@@ -86,23 +90,29 @@
     display: grid;
     position: fixed;
     row-gap: 10px;
-    border: 1px solid black;
     min-width: 100%;
+    border-radius: 8px 8px 0px 0px;
     bottom: 60px;
+    min-height: 25%;
     right: -1px;
-    background-color: blue;
+    background-color: $eggshellthru;
     justify-items: center;
     z-index: 9;
     
     transform: translate(100%, 0);
     transition: transform 0.5s ease-in-out;
-
+    
+    
 
     a {
         color: #E85A4F;
-        border: 1px solid #EAE7DC;
         font-size: 24px;
         text-decoration: none;
+        margin-top: 10px;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 
@@ -121,7 +131,7 @@
 {
   opacity: 1;
   transform: rotate(45deg) translate(1px, -2px);
-  background: #232323;
+  background: $fontcolorthru;
 }
 
 #menubox input:checked ~ #hamburger span:nth-child(2)
