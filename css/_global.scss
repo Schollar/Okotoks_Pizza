@@ -7,3 +7,9 @@
 img, iframe {
     max-width: 100%;
 }
+
+body {
+    display: grid;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
