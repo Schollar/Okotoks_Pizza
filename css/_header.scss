@@ -1,15 +1,15 @@
+@import 'global';
 
 .header-grid {
     display: grid;
     align-self: end;
     position: fixed;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 75px;
+    grid-template-columns: 2fr 1fr;
+    height: 60px;
     border-top: 1px solid black;
     min-width: 100%;
-    background-color: #b8bab9;
+    background-color: #dccd9e;
     overflow-x: hidden;
-    opacity: 45%;
      img {
          width: 75px;
          align-self: center;
@@ -19,26 +19,33 @@
     align-self: end;
     justify-self: end;
 }
-#phone {
+#info {
     display: grid;
     row-gap: 2.5px;
-    align-self: center;
-    font-size: 13px;
     text-align: center;
-    padding: 3px;
-    border: 1px solid black;
-    border-radius: 10px;
-    background-color: #272727;
-    
-
     a {
         color: $fontcolor;
+        font-weight: 800;
         text-decoration: none;
+        background-color: #dccd9e;
+        place-self: center;
+        max-width: 125px;
+        width: 50%;
+        padding: 3px;
+        font-size: 13px;
+
+        &:hover {
+            background-color: #8E8D8A;
+        }
+    }
+    p {
+        font-size: 11px;
+        font-weight: 600;
+        text-align: center;
+        margin-left: 10px;
     }
 }
-#phone:hover {
-    background-color: #686868;
-}
+
 
 #menubox {
   
@@ -47,7 +54,7 @@
         height: 40px;
         position: absolute;
         right: 0px;
-        bottom: 20px;
+        bottom: 12px;
         opacity: 0;
         z-index: 10;
     } 
@@ -60,8 +67,8 @@
         span {       
         display: block;
         position: relative;
-        bottom: 20px;
-        right: 5px;
+        bottom: 12px;
+        right: 9px;
         margin-bottom: 5px;
         width: 33px;
         height: 5px;
@@ -78,12 +85,13 @@
 #menu {
     display: grid;
     position: fixed;
+    row-gap: 10px;
     border: 1px solid black;
-    min-width: 99%;
-    bottom: 75px;
-    right: 0px;
-    background-color: white;
-    text-align: center;
+    min-width: 100%;
+    bottom: 60px;
+    right: -1px;
+    background-color: blue;
+    justify-items: center;
     z-index: 9;
     
     transform: translate(100%, 0);
@@ -91,8 +99,8 @@
 
 
     a {
-        border: 1px solid black;
-        // padding:5px;
+        color: #E85A4F;
+        border: 1px solid #EAE7DC;
         font-size: 24px;
         text-decoration: none;
     }

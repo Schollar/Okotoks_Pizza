@@ -1,20 +1,25 @@
-$fontcolor:whitesmoke;
+// COLORS
+// #EAE7DC
+// #D8C3A5
+// #8E8D8A
+// #E98074
+// #E85A4F
 
+
+$fontcolor:#E85A4F;
+$eggshellthru: #dccd9eaa;
+$eggshell:#dccd9e;
 
 * {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
+p {
+    font-family: Oswald;
+}
 
 img, iframe {
     max-width: 100%;
 }
 
-body {
-    display: grid;
-    position: relative;
-    min-height: 100vh;
-    overflow-x: hidden;
-    background-image: url(/images/mobilebackround.jpg);
-}
