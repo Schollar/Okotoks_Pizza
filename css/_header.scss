@@ -4,11 +4,14 @@
     display: grid;
     align-self: end;
     position: fixed;
+    right: 0;
+    bottom: 0;
     grid-template-columns: 2fr 1fr;
     height: 60px;
     min-width: 100%;
     background-color: $secondarythru;
     overflow-x: hidden;
+    z-index: 11;
      img {
          width: 75px;
          align-self: center;
@@ -109,6 +112,7 @@
         font-size: 24px;
         text-decoration: none;
         margin-top: 10px;
+        z-index: 9;
 
         &:hover {
             text-decoration: underline;

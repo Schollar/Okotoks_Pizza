@@ -10,7 +10,7 @@
     grid-auto-rows: minmax(min-content, max-content);
     min-height: 100vh;
     overflow-x: hidden;
-    row-gap: 10px;
+    row-gap: 15px;
     background-color: $bgcolor;
 }
 
@@ -46,51 +46,104 @@
 
     img {
         width: 95%;
-    }
+    }    
+}
 
-    a {
-        text-decoration: none;
+.order_now {
+
+
         padding-top: 10px;
         text-align: center;
         justify-self: center;
         height: 30px;
-        color: $fontcolor;
         font-family: Oswald;
         font-weight: 600;
-        width: 85vw;
+        width: 95%;
         border-radius: 10px;
         background-color: $secondary;
         
     &:hover {
         background-color: $hoverclr;
     }
+
+    a {
+        text-decoration: none;
+        color: $fontcolor;
+    }
     
-}
 }
 
 #awards {
     display: grid;
+    grid-template-rows: 1fr 1fr;
     text-align: center;
+    place-items: center;
     color: $fontcolor;
+    height: 60vh;
 
     h1 {
+        justify-self: center;
+        align-self: end;
+        text-shadow: 3px 3px black;
         font-size: 28px;
         font-weight: 800;
-        width: 325px;
+        max-width: 450px;
         z-index: 2;
-        margin-left: 20px;
-        margin-top: 125px;
     }
 
 
     h6 {
         color: black;
+        align-self: start;
         z-index: 2;
         font-weight: 900;
     }
     img {
+
         position: absolute;
-        width: 95%;
+        max-width: 95%;
+        height: inherit;
         justify-self: center;
+        opacity: 1;
     }
+}
+#about_us {
+    color: $fontcolor;
+    text-align: left;
+    margin-top: 5px;
+    h1 {
+        font-family: Brush Script MT;
+        text-align: center;
+        font-size: 2.5em;
+        text-decoration: underline;
+    }
+    p {
+        color: black;
+        font-family: Trebuchet MS;
+        font-weight: 200;
+        line-height: 1.2;
+        margin-left: 3%;
+    }
+}
+
+#floated {
+    position: relative;
+    float: left;
+    width: 30%;
+    margin-left: 3%;
+    margin-right: 10px;
+    left: -1px;
+    top: 13px;
+
+}
+#line {
+    place-self: center;
+    background-color: $fontcolor;
+    width: 85%;
+    height: 2px;
+    margin: 5px;
+    opacity: 20%;
+}
+#spacer {
+    height: 60px
 }
