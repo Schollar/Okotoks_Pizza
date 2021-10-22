@@ -12,7 +12,7 @@
     min-height: 100vh;
     overflow-x: hidden;
     row-gap: 15px;
-    background-color: $bgcolor;
+    background-color: white;
 }
 
 #logo {
@@ -78,7 +78,7 @@
     display: grid;
     place-items: center;
     text-align: center;
-    color: $fontcolor;
+    color: $secondary;
     min-height: 50vh;
     max-width: 400px;
     background-image: url(/images/doeball.jpg);
@@ -90,16 +90,12 @@
         text-shadow: 3px 3px black;
         font-size: 28px;
         font-weight: 800;
-        max-width: 300px;
-        z-index: 2;
     }
 
 
     h6 {
         color: black;
         align-self: start;
-        z-index: 2;
-        font-weight: 900;
     }
 }
 #about_us {

@@ -38,7 +38,7 @@ img, iframe {
       grid-template-columns: 2fr 1fr;
   height: 60px;
   min-width: 100%;
-  background-color: #ECE4B7dd;
+  background-color: #DD6031;
   overflow-x: hidden;
   z-index: 11;
 }
@@ -66,10 +66,10 @@ img, iframe {
 }
 
 #info a {
-  color: #DD6031;
+  color: black;
   font-weight: 800;
   text-decoration: none;
-  background-color: #ECE4B7;
+  background-color: #DD6031;
   place-self: center;
   max-width: 125px;
   margin: 3px;
@@ -78,8 +78,8 @@ img, iframe {
   font-size: 13px;
   border-radius: 9px;
   height: 20px;
-  -webkit-box-shadow: 1px 1px 4px 0px #DD6031;
-          box-shadow: 1px 1px 4px 0px #DD6031;
+  -webkit-box-shadow: 1px 1px 4px 0px black;
+          box-shadow: 1px 1px 4px 0px black;
 }
 
 #info a:hover {
@@ -88,7 +88,7 @@ img, iframe {
 
 #info p {
   font-size: 11px;
-  color: #DD6031;
+  color: black;
   font-weight: 700;
   text-align: center;
   margin-left: 10px;
@@ -117,7 +117,7 @@ img, iframe {
   margin-bottom: 5px;
   width: 33px;
   height: 5px;
-  background-color: #DD6031;
+  background-color: black;
   z-index: 2;
   -webkit-transform-origin: 0px 0px;
           transform-origin: 0px 0px;
@@ -137,7 +137,7 @@ img, iframe {
   bottom: 60px;
   min-height: 25%;
   right: -1px;
-  background-color: #ECE4B7dd;
+  background-color: #DD6031;
   justify-items: center;
   z-index: 9;
   -webkit-transform: translate(100%, 0);
@@ -149,7 +149,7 @@ img, iframe {
 }
 
 #menu a {
-  color: #DD6031;
+  color: black;
   font-size: 24px;
   text-decoration: none;
   margin-top: 10px;
@@ -174,7 +174,7 @@ img, iframe {
   opacity: 1;
   -webkit-transform: rotate(45deg) translate(1px, -2px);
           transform: rotate(45deg) translate(1px, -2px);
-  background: #DD6031;
+  background: black;
 }
 
 #menubox input:checked ~ #hamburger span:nth-child(2) {
@@ -210,7 +210,7 @@ img, iframe {
   min-height: 100vh;
   overflow-x: hidden;
   row-gap: 15px;
-  background-color: #EABE7C;
+  background-color: white;
 }
 
 #logo {
@@ -220,8 +220,8 @@ img, iframe {
   min-width: 100%;
   place-items: center;
   height: 35px;
-  background-color: #ECE4B7;
-  color: #DD6031;
+  background-color: #DD6031;
+  color: black;
 }
 
 #logo img {
@@ -260,7 +260,7 @@ img, iframe {
   font-weight: 600;
   width: 95%;
   border-radius: 10px;
-  background-color: #ECE4B7;
+  background-color: #DD6031;
 }
 
 .order_now:hover {
@@ -269,7 +269,7 @@ img, iframe {
 
 .order_now a {
   text-decoration: none;
-  color: #DD6031;
+  color: black;
 }
 
 #awards {
@@ -290,8 +290,6 @@ img, iframe {
   text-shadow: 3px 3px black;
   font-size: 28px;
   font-weight: 800;
-  max-width: 300px;
-  z-index: 2;
 }
 
 #awards h6 {
@@ -299,12 +297,10 @@ img, iframe {
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
-  z-index: 2;
-  font-weight: 900;
 }
 
 #about_us {
-  color: #DD6031;
+  color: black;
   text-align: left;
   margin-top: 5px;
 }
@@ -334,7 +330,7 @@ img, iframe {
 
 #line {
   place-self: center;
-  background-color: #DD6031;
+  background-color: black;
   width: 85%;
   height: 2px;
   margin: 5px;
