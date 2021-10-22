@@ -167,14 +167,22 @@
         list-style: none;
         font-weight: 700;
     }
+
+    
 }
 form {
     max-width: 100%;
+    margin-bottom: 25px;
     padding: 25px;
     font-weight: 700;
     border: 1px solid black;
     border-radius: 25px;
 
+    h3 {
+        font-family: Tangerine, cursive;
+        text-align: center;
+        font-size: 2em;
+    }
     ul {
         list-style: none;
     }
@@ -215,4 +223,40 @@ textarea {
     text-align: center;
     vertical-align: top;
     height: 75px;
+}
+
+#location {
+    display: grid;
+    place-items: center;
+    >h1 {
+        font-family: Tangerine, cursive;
+        font-size: 3.25em;
+        text-decoration: underline;
+        margin-bottom: 50px;
+    }
+
+    p:nth-child(3) {
+        margin-bottom: 50px;
+    }
+    
+
+    iframe {
+        max-width: 95%;
+    }
+
+}
+.wrapper {
+
+    p:nth-child(1) {
+        text-align: center;
+        font-family: Oswald, sans-serif;
+        font-size: 1.5em;
+        font-weight: 700;
+        margin-bottom: 20px;
+        }
+
+    p:nth-child(2) {
+        margin-bottom: 50px;
+
+    }
 }
