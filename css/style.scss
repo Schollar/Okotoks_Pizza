@@ -13,30 +13,6 @@
     background-color: white;
 }
 
-#logo {
-    display: grid;
-    grid-auto-flow: column;
-    min-width: 100%;
-    place-items: center;
-    height: 35px;
-    background-color: $secondary;
-    color: $fontcolor;
-
-    img {
-        width: 75px;
-        margin-left: 2px;
-        margin-top: 2px;
-    }
-
-    p {
-        text-align: center;
-        font-weight: 700;
-        font-size: 14px;
-        margin-top: 2px;
-
-    }
-}
-
 #top_content {
     display: grid;
     justify-items: center;
