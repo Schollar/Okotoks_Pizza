@@ -6,6 +6,7 @@
 #page_container {
     display: grid;
     position: relative;
+    place-items: center;
     grid-template-rows: repeat(1fr);
     grid-auto-rows: minmax(min-content, max-content);
     min-height: 100vh;
@@ -75,19 +76,21 @@
 
 #awards {
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    text-align: center;
     place-items: center;
+    text-align: center;
     color: $fontcolor;
-    height: 60vh;
+    min-height: 50vh;
+    max-width: 400px;
+    background-image: url(/images/doeball.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 95%;
 
     h1 {
-        justify-self: center;
-        align-self: end;
         text-shadow: 3px 3px black;
         font-size: 28px;
         font-weight: 800;
-        max-width: 450px;
+        max-width: 300px;
         z-index: 2;
     }
 
@@ -98,31 +101,22 @@
         z-index: 2;
         font-weight: 900;
     }
-    img {
-
-        position: absolute;
-        max-width: 95%;
-        height: inherit;
-        justify-self: center;
-        opacity: 1;
-    }
 }
 #about_us {
+
     color: $fontcolor;
     text-align: left;
     margin-top: 5px;
     h1 {
         font-family: Brush Script MT;
-        text-align: center;
         font-size: 2.5em;
         text-decoration: underline;
     }
     p {
         color: black;
+        text-align: center;
         font-family: Trebuchet MS;
-        font-weight: 200;
-        line-height: 1.2;
-        margin-left: 3%;
+        margin-right: 2.5%;
     }
 }
 

@@ -79,7 +79,7 @@
         margin-bottom: 5px;
         width: 33px;
         height: 5px;
-        background-color: $fontcolorthru;
+        background-color: $fontcolor;
         z-index: 2;
         transform-origin: 0px 0px;
   
@@ -135,7 +135,7 @@
 {
   opacity: 1;
   transform: rotate(45deg) translate(1px, -2px);
-  background: $fontcolorthru;
+  background: $fontcolor;
 }
 
 #menubox input:checked ~ #hamburger span:nth-child(2)
