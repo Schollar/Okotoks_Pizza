@@ -136,7 +136,7 @@
     opacity: 20%;
 }
 #spacer {
-    height: 60px
+    height: 25px;
 }
 
 #contact {
@@ -176,6 +176,7 @@ form {
     padding: 25px;
     font-weight: 700;
     border: 1px solid black;
+    box-shadow: 1px 1px 1px black;
     border-radius: 25px;
 
     h3 {
