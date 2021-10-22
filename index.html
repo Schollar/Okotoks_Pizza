@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Tangerine:wght@700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Home</title>
 </head>
@@ -49,7 +54,7 @@
         <section id="awards">
             <div id=wrapper">
                 <h1>VOTED BEST PIZZA IN OKOTOK'S 13 YEARS IN A ROW!</h1>
-                <h6>*Voting done by residents</h6>
+                <h6>*Voted by residents</h6>
             </div>
             <!-- <img src="/images/doeball.jpg" alt="Two hands holding a giant ball of pizza dough"> -->
         </section>
@@ -62,17 +67,20 @@
                 <img src="/images/owner.jpg" alt="A man putting the last bit of topping's on a peice of pizza">
             </div>
             <article>
-                <h1>_Our Story_</h1>
+                <h1>Our Story</h1>
                 <p> It’s a simple equation that keeps our customers coming back for more. Always fresh toppings and
                     great
                     service plus low, low prices equals great pizza. Here at Okotok's Pizza, we strive to give our
-                    customers the best. We’re one of the few family-owned companies left that still truly care about our
+                    customers the best. We’re one of the few family-owned companies left that still truly care about
+                    our
                     customers.</p><br>
                 <p>
 
                     Our customers can count on prompt and quality service, high-quality food made from high-quality
-                    products with the freshest ingredients available and great prices. Whether you’re looking to feed
-                    your family or cater a gathering or lunch meeting, feeding a large group is both easy and affordable
+                    products with the freshest ingredients available and great prices. Whether you’re looking to
+                    feed
+                    your family or cater a gathering or lunch meeting, feeding a large group is both easy and
+                    affordable
                     at Okotok's Pizza.</p><br>
 
 
@@ -83,6 +91,36 @@
             </article>
         </section>
         <div id="line"></div>
+        <section id="contact">
+            <article id="contactinfo">
+                <h1>Contact Us</h1>
+                <ul>
+                    <li>Phone Number: <a href="tel">555-555-1234</a></li>
+                    <li>Email: <a href="mailto:okotokspizza@thisisawebsite.ml">okotokspizza@thisisawebsite.ml</a></li>
+                    <li>Monday - Sunday 12pm - 11:30pm</li>
+                </ul>
+            </article>
+            <form action="/handlingpagedoesnotexist">
+                <ul>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name">
+                    </li>
+                    <li>
+                        <label for="mail">E-mail:</label>
+                        <input type="email" name="user_email" id="mail">
+                    </li>
+                    <li>
+                        <label for="msg">Message:</label>
+                        <textarea name="user_message" id="msg" cols="30" rows="10"></textarea>
+                    </li>
+                    <li class="formbutton">
+                        <!-- type=button because clicking on a button does nothing, can add custom javascript later. Since we dont have a webpage to send our data too yet, this is purley for looks has no function -->
+                        <button type="button">Send!</button>
+                    </li>
+                </ul>
+            </form>
+        </section>
         <footer></footer>
         <div id="spacer"></div>
 

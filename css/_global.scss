@@ -12,10 +12,12 @@ $hoverclr: #311E10;
 $secondary: #DD6031;
 $secondarythru: #DD6031;
 
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Tangerine:wght@700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: Oswald, sans-serif;
 }
 p {
     font-family: Oswald;
