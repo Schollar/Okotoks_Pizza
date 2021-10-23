@@ -223,6 +223,10 @@ img, iframe {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: column;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100vh;
+  margin-bottom: 60px;
   -ms-grid-columns: 1fr 0.25fr 0.25fr;
       grid-template-columns: 1fr 0.25fr 0.25fr;
   place-items: center;
@@ -262,6 +266,9 @@ img, iframe {
   display: -ms-grid;
   display: grid;
   position: relative;
+  width: 100%;
+  -ms-grid-rows: 50px 50px;
+      grid-template-rows: 50px 50px;
   place-items: center;
   min-height: 100vh;
   overflow-x: hidden;
@@ -269,29 +276,25 @@ img, iframe {
   background-color: white;
 }
 
-#pizza_menu {
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  -webkit-column-gap: 10px;
-          column-gap: 10px;
-  row-gap: 20px;
-}
-
 .card {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  max-width: 50%;
+  max-width: 75%;
   text-align: center;
   border-radius: 8px;
+  border: 1px solid black;
 }
 
 .card img {
-  margin-top: 10px;
+  margin-bottom: 10px;
   width: 100%;
+}
+
+.card p {
+  margin-top: 5px;
+  font-size: small;
+  margin: 5px;
 }
 
 #menu_links {
@@ -307,24 +310,37 @@ img, iframe {
   font-size: 1.75em;
 }
 
-#pasta_menu {
-  display: none;
-}
-
-#drink_menu {
-  display: none;
-}
-
 input {
   position: fixed;
   opacity: 0;
   width: 0;
 }
 
+.last_card {
+  height: 200px;
+}
+
+.food_menu {
+  opacity: 0;
+  display: -ms-grid;
+  display: grid;
+  position: absolute;
+  width: 100vw;
+  top: 75px;
+  place-items: center;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 20px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
 #menu_links label {
   margin: 5px;
   display: inline-block;
-  padding: 5px 20px;
+  padding: 5px 10px;
   border-radius: 10px;
   font-family: Oswald, sans-serif;
   font-size: 1.25em;
@@ -337,45 +353,22 @@ input {
 }
 
 input[value="pizza"]:checked ~ #pizza_menu {
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  -webkit-column-gap: 10px;
-          column-gap: 10px;
-  row-gap: 20px;
-}
-
-input[value="pizza"]:checked ~ #pasta_menu {
-  display: none;
-}
-
-input[value="pizza"]:checked ~ #drink_menu {
-  display: none;
+  opacity: 1;
 }
 
 input[value="pizza"]:checked ~ #menu_links label[for="radioPizza"] {
   background-color: #DD6031;
 }
 
-input[value="pasta"]:checked ~ #pasta_menu {
+#menu_referance {
+  position: relative;
   display: -ms-grid;
   display: grid;
   place-items: center;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  -webkit-column-gap: 10px;
-          column-gap: 10px;
-  row-gap: 20px;
 }
 
-input[value="pasta"]:checked ~ #pizza_menu {
-  display: none;
-}
-
-input[value="pasta"]:checked ~ #drink_menu {
-  display: none;
+input[value="pasta"]:checked ~ #pasta_menu {
+  opacity: 1;
 }
 
 input[value="pasta"]:checked ~ #menu_links label[for="radioPasta"] {
@@ -383,22 +376,7 @@ input[value="pasta"]:checked ~ #menu_links label[for="radioPasta"] {
 }
 
 input[value="drinks"]:checked ~ #drink_menu {
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  -webkit-column-gap: 10px;
-          column-gap: 10px;
-  row-gap: 20px;
-}
-
-input[value="drinks"]:checked ~ #pasta_menu {
-  display: none;
-}
-
-input[value="drinks"]:checked ~ #pizza_menu {
-  display: none;
+  opacity: 1;
 }
 
 input[value="drinks"]:checked ~ #menu_links label[for="radioDrinks"] {

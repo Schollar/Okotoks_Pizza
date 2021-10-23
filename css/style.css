@@ -223,6 +223,10 @@ img, iframe {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: column;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100vh;
+  margin-bottom: 60px;
   -ms-grid-columns: 1fr 0.25fr 0.25fr;
       grid-template-columns: 1fr 0.25fr 0.25fr;
   place-items: center;
@@ -290,8 +294,7 @@ img, iframe {
   height: 30px;
   font-family: Oswald;
   font-weight: 600;
-  width: 50%;
-  max-width: 50%;
+  width: 95%;
   border-radius: 10px;
   background-color: #DD6031;
 }
@@ -339,10 +342,9 @@ img, iframe {
 }
 
 #about_us h1 {
-  font-family: 'Lobster', cursive;
+  font-family: 'Tangerine', cursive;
   text-decoration: underline;
-  font-size: 2em;
-  font-weight: 100;
+  font-size: 3.25em;
   text-align: center;
   margin-bottom: 10px;
 }
@@ -396,9 +398,8 @@ img, iframe {
 }
 
 #contactinfo h1 {
-  font-family: 'Lobster', cursive;
-  font-size: 2em;
-  font-weight: 100;
+  font-family: Tangerine, cursive;
+  font-size: 3.25em;
   margin-bottom: 20px;
   text-decoration: underline;
 }
@@ -474,9 +475,8 @@ textarea {
 }
 
 #location > h1 {
-  font-family: 'Lobster', cursive;
-  font-size: 2em;
-  font-weight: 100;
+  font-family: Tangerine, cursive;
+  font-size: 3.25em;
   text-decoration: underline;
   margin-bottom: 50px;
 }
@@ -486,8 +486,7 @@ textarea {
 }
 
 #location iframe {
-  max-width: 80%;
-  max-height: 300px;
+  max-width: 95%;
 }
 
 .wrapper p:nth-child(1) {
@@ -501,3 +500,4 @@ textarea {
 .wrapper p:nth-child(2) {
   margin-bottom: 50px;
 }
+/*# sourceMappingURL=style.css.map */

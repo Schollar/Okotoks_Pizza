@@ -1,6 +1,9 @@
 #page_footer {
     display: grid;
     grid-auto-flow: column;
+    position: sticky;
+    top: 100vh;
+    margin-bottom: 60px;
     grid-template-columns: 1fr 0.25fr 0.25fr;
     place-items: center;
     height: 15vh;
