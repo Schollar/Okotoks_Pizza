@@ -8,7 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Tangerine:wght@700&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Parisienne&family=Tangerine:wght@700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="/css/menu.css">
     <title>Home</title>
@@ -46,19 +49,32 @@
             <img src="/images/logo.png" alt="Okotoks Pizza Logo">
             <p>50% OFF ALL PIZZA'S AFTER 930PM EVERYDAY!</p>
         </section>
+        <input type="radio" id="radioPizza" name="menuselect" value="pizza" checked>
+        <input type="radio" id="radioPasta" name="menuselect" value="pasta">
+        <input type="radio" id="radioDrinks" name="menuselect" value="drinks">
         <nav id="menu_links">
-            <a href="#" class="swipe_fill swipe_fill--up">Pizza</a>
-            <a href="#" class="swipe_fill swipe_fill--up">Pasta</a>
-            <a href="#" class="swipe_fill swipe_fill--up">Drinks</a>
+            <div id="radio_wrapper">
+                <label for="radioPizza">Pizza </label>
+            </div>
+            <p> / </p>
+            <div id="radio_wrapper">
+                <label for="radioPasta">Pasta</label>
+            </div>
+            <p> / </p>
+            <div id="radio_wrapper">
+                <label for="radioDrinks">Drinks</label>
+            </div>
         </nav>
         <section id="pizza_menu">
+            <h1>PIZZA</h1>
             <section class="card">
                 <img src='http://placekitten.com/150' alt='a kitten' />
                 <h1>This is a kitten</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga illum ipsum accusantium
                     quibusdam
                     ad
-                    error quo excepturi voluptatum. Nesciunt, quae! Placeat ducimus quod quasi, cupiditate doloremque
+                    error quo excepturi voluptatum. Nesciunt, quae! Placeat ducimus quod quasi, cupiditate
+                    doloremque
                     culpa
                     reiciendis corrupti!</p>
             </section>
@@ -68,7 +84,8 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga illum ipsum accusantium
                     quibusdam
                     ad
-                    error quo excepturi voluptatum. Nesciunt, quae! Placeat ducimus quod quasi, cupiditate doloremque
+                    error quo excepturi voluptatum. Nesciunt, quae! Placeat ducimus quod quasi, cupiditate
+                    doloremque
                     culpa
                     reiciendis corrupti!</p>
             </section>
@@ -78,7 +95,8 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga illum ipsum accusantium
                     quibusdam
                     ad
-                    error quo excepturi voluptatum. Nesciunt, quae! Placeat ducimus quod quasi, cupiditate doloremque
+                    error quo excepturi voluptatum. Nesciunt, quae! Placeat ducimus quod quasi, cupiditate
+                    doloremque
                     culpa
                     reiciendis corrupti!</p>
             </section>
@@ -88,7 +106,8 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga illum ipsum accusantium
                     quibusdam
                     ad
-                    error quo excepturi voluptatum. Nesciunt, quae! Placeat ducimus quod quasi, cupiditate doloremque
+                    error quo excepturi voluptatum. Nesciunt, quae! Placeat ducimus quod quasi, cupiditate
+                    doloremque
                     culpa
                     reiciendis corrupti!</p>
             </section>
@@ -97,7 +116,8 @@
                 <h1>This is a kitten</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga illum ipsum accusantium
                     quibusdam ad
-                    error quo excepturi voluptatum. Nesciunt, quae! Placeat ducimus quod quasi, cupiditate doloremque
+                    error quo excepturi voluptatum. Nesciunt, quae! Placeat ducimus quod quasi, cupiditate
+                    doloremque
                     culpa
                     reiciendis corrupti!</p>
             </section>
@@ -106,7 +126,8 @@
                 <h1>This is a kitten</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga illum ipsum accusantium
                     quibusdam ad
-                    error quo excepturi voluptatum. Nesciunt, quae! Placeat ducimus quod quasi, cupiditate doloremque
+                    error quo excepturi voluptatum. Nesciunt, quae! Placeat ducimus quod quasi, cupiditate
+                    doloremque
                     culpa
                     reiciendis corrupti!</p>
             </section>
@@ -115,7 +136,192 @@
                 <h1>This is a kitten</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga illum ipsum accusantium
                     quibusdam ad
-                    error quo excepturi voluptatum. Nesciunt, quae! Placeat ducimus quod quasi, cupiditate doloremque
+                    error quo excepturi voluptatum. Nesciunt, quae! Placeat ducimus quod quasi, cupiditate
+                    doloremque
+                    culpa
+                    reiciendis corrupti!</p>
+            </section>
+            <section class="card">
+                <img src='http://placekitten.com/150' alt='a kitten' />
+                <h1>This is a kitten</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga illum ipsum accusantium
+                    quibusdam ad
+                    error quo excepturi voluptatum. Nesciunt, quae! Placeat ducimus quod quasi, cupiditate
+                    doloremque
+                    culpa
+                    reiciendis corrupti!</p>
+            </section>
+        </section>
+        <section id="pasta_menu">
+            <h1>PASTA</h1>
+            <section class="card">
+                <img src='http://placekitten.com/150' alt='a kitten' />
+                <h1>This is a kitten</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga illum ipsum accusantium
+                    quibusdam
+                    ad
+                    error quo excepturi voluptatum. Nesciunt, quae! Placeat ducimus quod quasi, cupiditate
+                    doloremque
+                    culpa
+                    reiciendis corrupti!</p>
+            </section>
+            <section class="card">
+                <img src='http://placekitten.com/150' alt='a kitten' />
+                <h1>This is a kitten</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga illum ipsum accusantium
+                    quibusdam
+                    ad
+                    error quo excepturi voluptatum. Nesciunt, quae! Placeat ducimus quod quasi, cupiditate
+                    doloremque
+                    culpa
+                    reiciendis corrupti!</p>
+            </section>
+            <section class="card">
+                <img src='http://placekitten.com/150' alt='a kitten' />
+                <h1>This is a kitten</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga illum ipsum accusantium
+                    quibusdam
+                    ad
+                    error quo excepturi voluptatum. Nesciunt, quae! Placeat ducimus quod quasi, cupiditate
+                    doloremque
+                    culpa
+                    reiciendis corrupti!</p>
+            </section>
+            <section class="card">
+                <img src='http://placekitten.com/150' alt='a kitten' />
+                <h1>This is a kitten</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga illum ipsum accusantium
+                    quibusdam
+                    ad
+                    error quo excepturi voluptatum. Nesciunt, quae! Placeat ducimus quod quasi, cupiditate
+                    doloremque
+                    culpa
+                    reiciendis corrupti!</p>
+            </section>
+            <section class="card">
+                <img src='http://placekitten.com/150' alt='a kitten' />
+                <h1>This is a kitten</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga illum ipsum accusantium
+                    quibusdam ad
+                    error quo excepturi voluptatum. Nesciunt, quae! Placeat ducimus quod quasi, cupiditate
+                    doloremque
+                    culpa
+                    reiciendis corrupti!</p>
+            </section>
+            <section class="card">
+                <img src='http://placekitten.com/150' alt='a kitten' />
+                <h1>This is a kitten</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga illum ipsum accusantium
+                    quibusdam ad
+                    error quo excepturi voluptatum. Nesciunt, quae! Placeat ducimus quod quasi, cupiditate
+                    doloremque
+                    culpa
+                    reiciendis corrupti!</p>
+            </section>
+            <section class="card">
+                <img src='http://placekitten.com/150' alt='a kitten' />
+                <h1>This is a kitten</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga illum ipsum accusantium
+                    quibusdam ad
+                    error quo excepturi voluptatum. Nesciunt, quae! Placeat ducimus quod quasi, cupiditate
+                    doloremque
+                    culpa
+                    reiciendis corrupti!</p>
+            </section>
+            <section class="card">
+                <img src='http://placekitten.com/150' alt='a kitten' />
+                <h1>This is a kitten</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga illum ipsum accusantium
+                    quibusdam ad
+                    error quo excepturi voluptatum. Nesciunt, quae! Placeat ducimus quod quasi, cupiditate
+                    doloremque
+                    culpa
+                    reiciendis corrupti!</p>
+            </section>
+        </section>
+        <section id="drink_menu">
+            <h1>DRINKS</h1>
+            <section class="card">
+                <img src='http://placekitten.com/150' alt='a kitten' />
+                <h1>This is a kitten</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga illum ipsum accusantium
+                    quibusdam
+                    ad
+                    error quo excepturi voluptatum. Nesciunt, quae! Placeat ducimus quod quasi, cupiditate
+                    doloremque
+                    culpa
+                    reiciendis corrupti!</p>
+            </section>
+            <section class="card">
+                <img src='http://placekitten.com/150' alt='a kitten' />
+                <h1>This is a kitten</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga illum ipsum accusantium
+                    quibusdam
+                    ad
+                    error quo excepturi voluptatum. Nesciunt, quae! Placeat ducimus quod quasi, cupiditate
+                    doloremque
+                    culpa
+                    reiciendis corrupti!</p>
+            </section>
+            <section class="card">
+                <img src='http://placekitten.com/150' alt='a kitten' />
+                <h1>This is a kitten</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga illum ipsum accusantium
+                    quibusdam
+                    ad
+                    error quo excepturi voluptatum. Nesciunt, quae! Placeat ducimus quod quasi, cupiditate
+                    doloremque
+                    culpa
+                    reiciendis corrupti!</p>
+            </section>
+            <section class="card">
+                <img src='http://placekitten.com/150' alt='a kitten' />
+                <h1>This is a kitten</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga illum ipsum accusantium
+                    quibusdam
+                    ad
+                    error quo excepturi voluptatum. Nesciunt, quae! Placeat ducimus quod quasi, cupiditate
+                    doloremque
+                    culpa
+                    reiciendis corrupti!</p>
+            </section>
+            <section class="card">
+                <img src='http://placekitten.com/150' alt='a kitten' />
+                <h1>This is a kitten</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga illum ipsum accusantium
+                    quibusdam ad
+                    error quo excepturi voluptatum. Nesciunt, quae! Placeat ducimus quod quasi, cupiditate
+                    doloremque
+                    culpa
+                    reiciendis corrupti!</p>
+            </section>
+            <section class="card">
+                <img src='http://placekitten.com/150' alt='a kitten' />
+                <h1>This is a kitten</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga illum ipsum accusantium
+                    quibusdam ad
+                    error quo excepturi voluptatum. Nesciunt, quae! Placeat ducimus quod quasi, cupiditate
+                    doloremque
+                    culpa
+                    reiciendis corrupti!</p>
+            </section>
+            <section class="card">
+                <img src='http://placekitten.com/150' alt='a kitten' />
+                <h1>This is a kitten</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga illum ipsum accusantium
+                    quibusdam ad
+                    error quo excepturi voluptatum. Nesciunt, quae! Placeat ducimus quod quasi, cupiditate
+                    doloremque
+                    culpa
+                    reiciendis corrupti!</p>
+            </section>
+            <section class="card">
+                <img src='http://placekitten.com/150' alt='a kitten' />
+                <h1>This is a kitten</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fuga illum ipsum accusantium
+                    quibusdam ad
+                    error quo excepturi voluptatum. Nesciunt, quae! Placeat ducimus quod quasi, cupiditate
+                    doloremque
                     culpa
                     reiciendis corrupti!</p>
             </section>
@@ -130,7 +336,6 @@
             </div>
         </footer>
         <div id="spacer"></div>
-
     </div>
 </body>
 
