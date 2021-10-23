@@ -25,15 +25,13 @@
 
     display: grid;
     place-items: center;
-    border: 2px solid black;
-    max-width: 95%;
+    max-width: 50%;
     text-align: center;
     border-radius: 8px;
-    background-color: lightblue;
     
     img {
-    border-radius: 50%;
     margin-top: 10px;
+    width: 100%;
     }
 }
 
@@ -48,10 +46,7 @@
       font-size: 1.75em;
     }
 }
-#radio_wrapper {
-  width: 100px;
-  height: 50px;
-}
+
 #pasta_menu {
   display: none;
 }
@@ -67,55 +62,19 @@ input {
     width: 0;
   }
 // MENU "BUTTON" STYLING
-.button_slide {
-  color: #FFF;
-  border: 2px solid rgb(216, 2, 134);
-  border-radius: 0px;
-  padding: 18px 36px;
-  display: inline-block;
-  font-family: "Lucida Console", Monaco, monospace;
-  font-size: 14px;
-  letter-spacing: 1px;
-  cursor: pointer;
-  box-shadow: inset 0 0 0 0 #D80286;
-  -webkit-transition: ease-out 0.4s;
-  -moz-transition: ease-out 0.4s;
-  transition: ease-out 0.4s;
-}
 
-.slide_down:hover {
-  box-shadow: inset 0 100px 0 0 #D80286;
-}
-
-.slide_right:hover {
-  box-shadow: inset 400px 0 0 0 #D80286;
-}
-
-.slide_left:hover {
-  box-shadow: inset 0 0 0 50px #D80286;
-}
-
-.slide_diagonal:hover {
-  box-shadow: inset 400px 50px 0 0 #D80286;
-}
-
-#outer {
-  width: 364px;
-  margin: 50px auto 0 auto;
-  text-align: center;
-}
 #menu_links label {
     margin: 5px;
     display: inline-block;
-    border-radius: 10px;
     padding: 5px 20px;
+    border-radius: 10px;
     font-family: Oswald, sans-serif;
     font-size: 1.25em;
+    cursor: pointer;
     box-shadow: inset 0 0 0 0 $secondary;
-    -webkit-transition: ease-out 0.4s;
-  -moz-transition: ease-out 0.4s;
-    transition: ease-out 0.4s;
-
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+    transition: ease-in-out 0.5s;
   }
   input[value="pizza"]:checked {
   
@@ -132,6 +91,9 @@ input {
     }
     ~#drink_menu {
       display: none;
+    }
+    ~#menu_links label[for="radioPizza"] {
+      background-color: $secondary;
     }
       
 }
@@ -153,6 +115,9 @@ input[value="pasta"]:checked {
     ~#drink_menu {
       display: none;
     }
+    ~#menu_links label[for="radioPasta"] {
+      background-color: $secondary;
+    }
       
 }
 
@@ -173,10 +138,14 @@ input[value="drinks"]:checked {
   ~#pizza_menu {
     display: none;
   }
+
+  ~#menu_links label[for="radioDrinks"] {
+    background-color: $secondary;
+  }
+
 }
 
 #radio_wrapper:hover label {
   text-decoration: underline;
-  box-shadow: inset 400px 0 0 0 $secondary;
-
+  box-shadow: inset 400px 0 0 1px $secondary;
 }
