@@ -390,4 +390,15 @@ input[value="drinks"]:checked ~ #menu_links label[for="radioDrinks"] {
   -webkit-box-shadow: inset 400px 0 0 1px #DD6031;
           box-shadow: inset 400px 0 0 1px #DD6031;
 }
+
+.last_card_tablet {
+  display: none;
+}
+
+@media only screen and (min-width: 650px) {
+  .last_card_tablet {
+    display: inline;
+    height: 200px;
+  }
+}
 /*# sourceMappingURL=menu.css.map */
