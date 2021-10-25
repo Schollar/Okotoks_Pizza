@@ -2,6 +2,19 @@
 @import 'header';
 @import 'footer';
 
+@mixin priceselectsmall {
+  
+  ~.price_links label[for="radioSmall"] {
+    background-color: $secondary;
+  }
+  ~.price>p:nth-child(1) {
+    right: 0;
+    top: 0;
+    opacity: 1;
+
+  }
+}
+
 #page_container {
   display: -ms-grid;
   display: grid;
@@ -120,6 +133,9 @@ input[value="drinks"]:checked {
     opacity: 1;
     top: 75px;
   }
+  ~#menu_links label[for="radioDrinks"] {
+    background-color: $secondary;
+  }
 }
 
 #radio_wrapper:hover label {
@@ -130,16 +146,32 @@ input[value="drinks"]:checked {
 .last_card_tablet {
   display: none;
 }
-#price>p:nth-child(3){
-  position: absolute;
-  left: -9999px;
+
+.price {
+  display: grid;
+  grid-auto-flow: column;
+
+  p {
+    position: relative;
+    font-weight: bold;
+    opacity: 0;
+    right: -9999px;
+    top: 0;
+  }
+
+  
+}
+// PRICE LINK STYLING
+.price_links {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 15px;
 }
 
-// PRICE LINK STYLING
-#price_links label {
+
+.price_links label {
   margin: 5px;
-  display: inline-block;
-  padding: 5px 10px;
+  padding: 1px 1px;
   border-radius: 10px;
   font-family: Oswald, sans-serif;
   font-size: 1.25em;
@@ -147,30 +179,62 @@ input[value="drinks"]:checked {
   box-shadow: inset 0 0 0 0 $secondary;
   -webkit-transition: ease-out 0.5s;
   -moz-transition: ease-out 0.5s;
-  transition: ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
   
-  input[value="small"]:checked {
-  
-    ~#price:nth-child(3) {
+}
+
+// @include priceselectsmall(sizeselect);
+input[id="radioSmall"]:checked {
+
+  @include priceselectsmall();
+  // ~.price_links label[for="radioSmall"] {
+  //   background-color: $secondary;
+  // }
+  // ~.price p:nth-child(1) {
+  //   right: 0;
+  //   top: 0;
+  //   opacity: 1;
+
+  // }
+}
+.price_referance>input[value="medium"]:checked {
+
+  >.price_links label[for="radioMedium"] {
+    background-color: $secondary;
+  }
+  >.price p:nth-child(2) {
+    right: 0;
+    top: 0;
     opacity: 1;
-    left: 0px;
 
   }
 }
+input[value="large"]:checked {
+
+  + .price_links label[for="radioLarge"] {
+    background-color: $secondary;
+  }
+  +.price p:nth-child(3) {
+    right: 0;
+    top: 0;
+    opacity: 1;
+
+  }
 }
-#price_referance {
+
+.price_wrapper:hover label {
+  text-decoration: underline;
+}
+
+.price_referance {
 position: relative;
 display: grid;
 grid-auto-flow: column;
 place-items: center;
 }
 
-#price {
-  display: grid;
-  position: absolute;
-  grid-auto-flow: column;
-  background-color: red;
-}
+
+
 
 @media only screen and (min-width: 650px) {
  
