@@ -276,6 +276,23 @@ img, iframe {
   background-color: white;
 }
 
+#page_container .food_menu {
+  opacity: 0;
+  display: -ms-grid;
+  display: grid;
+  position: absolute;
+  width: 100vw;
+  top: -9999px;
+  place-items: center;
+  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 20px;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
 .card {
   display: -ms-grid;
   display: grid;
@@ -319,9 +336,26 @@ img, iframe {
 .card .price p {
   position: absolute;
   font-weight: bold;
-  opacity: 0;
   left: -9999px;
   bottom: 0;
+}
+
+.card .smallprice {
+  opacity: 0;
+  -webkit-transition: opacity ease-in-out 0.5s;
+  transition: opacity ease-in-out 0.5s;
+}
+
+.card .medprice {
+  opacity: 0;
+  -webkit-transition: opacity ease-in-out 0.5s;
+  transition: opacity ease-in-out 0.5s;
+}
+
+.card .largeprice {
+  opacity: 0;
+  -webkit-transition: opacity ease-in-out 0.5s;
+  transition: opacity ease-in-out 0.5s;
 }
 
 .card .price_wrapper label {
@@ -334,8 +368,7 @@ img, iframe {
   -webkit-box-shadow: inset 0 0 0 0 #DD6031;
           box-shadow: inset 0 0 0 0 #DD6031;
   -webkit-transition: ease-out 0.5s;
-  -webkit-transition: all ease-in-out 0.5s;
-  transition: all ease-in-out 0.5s;
+  -moz-transition: ease-out 0.5s;
 }
 
 .card .price_wrapper:hover label {
@@ -345,7 +378,7 @@ img, iframe {
 .card .price_referance {
   position: relative;
   padding: 10px;
-  margin-bottom: 15%;
+  margin-bottom: 25%;
   display: -ms-grid;
   display: grid;
   z-index: 3;
@@ -359,7 +392,7 @@ img, iframe {
 
 .card .price_referance input[value="small"]:checked ~ .price > .smallprice {
   left: 35%;
-  bottom: -75%;
+  bottom: -100%;
   opacity: 1;
 }
 
@@ -367,9 +400,9 @@ img, iframe {
   background-color: #DD6031;
 }
 
-.card .price_referance input[value="medium"]:checked ~ .price .medprice {
+.card .price_referance input[value="medium"]:checked ~ .price > .medprice {
   left: 35%;
-  bottom: -75%;
+  bottom: -100%;
   opacity: 1;
 }
 
@@ -377,9 +410,9 @@ img, iframe {
   background-color: #DD6031;
 }
 
-.card .price_referance input[value="large"]:checked ~ .price .largeprice {
+.card .price_referance input[value="large"]:checked ~ .price > .largeprice {
   left: 35%;
-  bottom: -75%;
+  bottom: -100%;
   opacity: 1;
 }
 
@@ -394,27 +427,6 @@ img, iframe {
 #menu_links p {
   font-weight: 900;
   font-size: 1.75em;
-}
-
-.last_card {
-  height: 200px;
-}
-
-.food_menu {
-  opacity: 0;
-  display: -ms-grid;
-  display: grid;
-  position: absolute;
-  width: 100vw;
-  top: -9999px;
-  place-items: center;
-  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  -webkit-column-gap: 10px;
-          column-gap: 10px;
-  row-gap: 20px;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
 }
 
 #menu_links label {
@@ -480,6 +492,10 @@ input[value="drinks"]:checked ~ #menu_links label[for="radioDrinks"] {
 
 .last_card_tablet {
   display: none;
+}
+
+.last_card {
+  height: 200px;
 }
 
 @media only screen and (min-width: 650px) {

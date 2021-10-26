@@ -13,8 +13,21 @@
   overflow-x: hidden;
   row-gap: 35px;
   background-color: white;
+  
+  .food_menu {
+  opacity: 0;
+  display: grid;
+  position: absolute;
+  width: 100vw;
+  top: -9999px;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  column-gap: 10px;
+  row-gap: 20px;
+  transition: opacity 0.5s ease-in-out;
 }
-
+}
+// BEGGINNING OF MENU CARD STYLING
 .card {
 
     display: grid;
@@ -51,11 +64,22 @@
   p {
     position: absolute;
     font-weight: bold;
-    opacity: 0;
     left: -9999px;
     bottom: 0;
   }
 
+}
+.smallprice {
+  opacity: 0;
+  transition: opacity ease-in-out 0.5s;
+}
+.medprice {
+  opacity: 0;
+  transition: opacity ease-in-out 0.5s;
+}
+.largeprice {
+  opacity: 0;
+  transition: opacity ease-in-out 0.5s;
 }
   .price_wrapper label {
   margin: 10px;
@@ -67,7 +91,7 @@
   box-shadow: inset 0 0 0 0 $secondary;
   -webkit-transition: ease-out 0.5s;
   -moz-transition: ease-out 0.5s;
-  transition: all ease-in-out 0.5s;
+
 }
   .price_wrapper:hover label {
   text-decoration: underline;
@@ -76,7 +100,7 @@
   .price_referance {
 position: relative;
 padding: 10px;
-margin-bottom: 15%;
+margin-bottom: 25%;
 display: grid;
 z-index: 3;
 grid-auto-flow: column;
@@ -91,7 +115,7 @@ place-items: center;
   }
   ~.price>.smallprice {
     left: 35%;
-    bottom: -75%;
+    bottom: -100%;
     opacity: 1;
       }
   }
@@ -99,9 +123,9 @@ place-items: center;
   ~.price_links>.price_wrapper label[class="medium_price_label"] {
     background-color: $secondary;
     }
-  ~.price .medprice {
+  ~.price>.medprice {
     left: 35%;
-    bottom: -75%;
+    bottom: -100%;
     opacity: 1;
     }
 }
@@ -110,14 +134,14 @@ place-items: center;
   ~.price_links>.price_wrapper label[class="large_price_label"] {
     background-color: $secondary;
     }
-  ~.price .largeprice {
+  ~.price>.largeprice {
     left: 35%;
-    bottom: -75%;
+    bottom: -100%;
     opacity: 1;
       }
     }
 }
-
+// END OF MENU CARDS START OF TOP NAV LINKS
 #menu_links {
   display: grid;
   position: relative;
@@ -129,25 +153,6 @@ place-items: center;
       font-size: 1.75em;
     }
 }
-
-
-.last_card {
-  height: 200px;
-}
-
-.food_menu {
-  opacity: 0;
-  display: grid;
-  position: absolute;
-  width: 100vw;
-  top: -9999px;
-  place-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  column-gap: 10px;
-  row-gap: 20px;
-  transition: opacity 0.5s ease-in-out;
-}
-// MENU "BUTTON" STYLING
 
 #menu_links label {
     margin: 5px;
@@ -219,7 +224,9 @@ input[value="drinks"]:checked {
 .last_card_tablet {
   display: none;
 }
-
+.last_card {
+  height: 200px;
+}
 @media only screen and (min-width: 650px) {
  
   .last_card_tablet {
