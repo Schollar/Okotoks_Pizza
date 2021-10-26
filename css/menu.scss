@@ -83,20 +83,20 @@ place-items: center;
 
 .price_referance input[value="small"]:checked {
  
-  ~.price_links>.price_wrapper:nth-child(1) label {
+  ~.price_links>.price_wrapper label[class="small_price_label"] {
     background-color: $secondary;
   }
-  ~.price>p:nth-child(1) {
+  ~.price>.smallprice {
     right: -40%;
     top: 0;
     opacity: 1;
       }
   }
   .price_referance input[value="medium"]:checked {
-  ~.price_links>.price_wrapper:nth-child(2) label {
+  ~.price_links>.price_wrapper label[class="medium_price_label"] {
     background-color: $secondary;
     }
-  ~.price p:nth-child(2) {
+  ~.price .medprice {
     right: -40%;
     top: 0;
     opacity: 1;
@@ -104,10 +104,10 @@ place-items: center;
 }
 .price_referance input[value="large"]:checked {
   
-  ~.price_links>.price_wrapper:nth-child(3) label {
+  ~.price_links>.price_wrapper label[class="large_price_label"] {
     background-color: $secondary;
     }
-  ~.price p:nth-child(3) {
+  ~.price .largeprice {
     right: -40%;
     top: 0;
     opacity: 1;

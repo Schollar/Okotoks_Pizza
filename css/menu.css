@@ -350,31 +350,31 @@ img, iframe {
   place-items: center;
 }
 
-.card .price_referance input[value="small"]:checked ~ .price_links > .price_wrapper:nth-child(1) label {
+.card .price_referance input[value="small"]:checked ~ .price_links > .price_wrapper label[class="small_price_label"] {
   background-color: #DD6031;
 }
 
-.card .price_referance input[value="small"]:checked ~ .price > p:nth-child(1) {
+.card .price_referance input[value="small"]:checked ~ .price > .smallprice {
   right: -40%;
   top: 0;
   opacity: 1;
 }
 
-.card .price_referance input[value="medium"]:checked ~ .price_links > .price_wrapper:nth-child(2) label {
+.card .price_referance input[value="medium"]:checked ~ .price_links > .price_wrapper label[class="medium_price_label"] {
   background-color: #DD6031;
 }
 
-.card .price_referance input[value="medium"]:checked ~ .price p:nth-child(2) {
+.card .price_referance input[value="medium"]:checked ~ .price .medprice {
   right: -40%;
   top: 0;
   opacity: 1;
 }
 
-.card .price_referance input[value="large"]:checked ~ .price_links > .price_wrapper:nth-child(3) label {
+.card .price_referance input[value="large"]:checked ~ .price_links > .price_wrapper label[class="large_price_label"] {
   background-color: #DD6031;
 }
 
-.card .price_referance input[value="large"]:checked ~ .price p:nth-child(3) {
+.card .price_referance input[value="large"]:checked ~ .price .largeprice {
   right: -40%;
   top: 0;
   opacity: 1;
