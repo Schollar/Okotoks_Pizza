@@ -52,8 +52,8 @@
     position: absolute;
     font-weight: bold;
     opacity: 0;
-    right: -9999px;
-    top: 0;
+    left: -9999px;
+    bottom: 0;
   }
 
 }
@@ -75,7 +75,10 @@
 
   .price_referance {
 position: relative;
+padding: 10px;
+margin-bottom: 15%;
 display: grid;
+z-index: 3;
 grid-auto-flow: column;
 place-items: center;
 }  
@@ -87,8 +90,8 @@ place-items: center;
     background-color: $secondary;
   }
   ~.price>.smallprice {
-    right: -40%;
-    top: 0;
+    left: 35%;
+    bottom: -75%;
     opacity: 1;
       }
   }
@@ -97,8 +100,8 @@ place-items: center;
     background-color: $secondary;
     }
   ~.price .medprice {
-    right: -40%;
-    top: 0;
+    left: 35%;
+    bottom: -75%;
     opacity: 1;
     }
 }
@@ -108,8 +111,8 @@ place-items: center;
     background-color: $secondary;
     }
   ~.price .largeprice {
-    right: -40%;
-    top: 0;
+    left: 35%;
+    bottom: -75%;
     opacity: 1;
       }
     }

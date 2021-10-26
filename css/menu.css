@@ -320,8 +320,8 @@ img, iframe {
   position: absolute;
   font-weight: bold;
   opacity: 0;
-  right: -9999px;
-  top: 0;
+  left: -9999px;
+  bottom: 0;
 }
 
 .card .price_wrapper label {
@@ -344,8 +344,11 @@ img, iframe {
 
 .card .price_referance {
   position: relative;
+  padding: 10px;
+  margin-bottom: 15%;
   display: -ms-grid;
   display: grid;
+  z-index: 3;
   grid-auto-flow: column;
   place-items: center;
 }
@@ -355,8 +358,8 @@ img, iframe {
 }
 
 .card .price_referance input[value="small"]:checked ~ .price > .smallprice {
-  right: -40%;
-  top: 0;
+  left: 35%;
+  bottom: -75%;
   opacity: 1;
 }
 
@@ -365,8 +368,8 @@ img, iframe {
 }
 
 .card .price_referance input[value="medium"]:checked ~ .price .medprice {
-  right: -40%;
-  top: 0;
+  left: 35%;
+  bottom: -75%;
   opacity: 1;
 }
 
@@ -375,8 +378,8 @@ img, iframe {
 }
 
 .card .price_referance input[value="large"]:checked ~ .price .largeprice {
-  right: -40%;
-  top: 0;
+  left: 35%;
+  bottom: -75%;
   opacity: 1;
 }
 
