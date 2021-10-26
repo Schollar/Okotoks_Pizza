@@ -71,19 +71,20 @@
                     <img src='/images/pepperoni.jpg' alt='A Pepperoni Pizza' />
                     <h1>Pepperoni</h1>
                     <p>Lots and lots of pepperoni topped with an extra layer of cheese.</p>
-                    <div class="price_referance">
-                        <input type="radio" id="radioSmall" name="sizeselect" value="small" checked>
-                        <input type="radio" id="radioMedium" name="sizeselect" value="medium">
-                        <input type="radio" id="radioLarge" name="sizeselect" value="large">
+                    <div class="price_referance" id="pep_price">
+                        <input type="radio" class="radioSmall" name="pep_select" id="pep_price_small" value="small"
+                            checked>
+                        <input type="radio" class="radioMedium" name="pep_select" id="pep_price_medium" value="medium">
+                        <input type="radio" class="radioLarge" name="pep_select" id="pep_price_large" value="large">
                         <nav class="price_links">
                             <div class="price_wrapper">
-                                <label for="radioSmall">S</label>
+                                <label for="pep_price_small">S</label>
                             </div>
                             <div class="price_wrapper">
-                                <label for="radioMedium">M</label>
+                                <label for="pep_price_medium">M</label>
                             </div>
                             <div class="price_wrapper">
-                                <label for="radioLarge">L</label>
+                                <label for="pep_price_large">L</label>
                             </div>
                         </nav>
                         <div class="price">
@@ -97,22 +98,24 @@
                     <img src='/images/hawaiian.jpg' alt='A Hawaiian Pizza' />
                     <h1>Hawaiian</h1>
                     <p>Succulent pineapple and slices of ham topped with an extra layer of cheese.</p>
-                    <div class="price_referance">
-                        <input type="radio" id="radioSmall" name="hawaiianselect" value="small" checked>
-                        <input type="radio" id="radioMedium" name="hawaiianselect" value="medium">
-                        <input type="radio" id="radioLarge" name="hawaiianselect" value="large">
-                        <nav class="price_links">
+                    <div class="price_referance" id="hawaiian_price">
+                        <input type="radio" class="radioSmall" name="hawaiian_select" id="hawaiian_small" value="small"
+                            checked>
+                        <input type="radio" class="radioMedium" name="hawaiian_select" id="hawaiian_medium"
+                            value="medium">
+                        <input type="radio" class="radioLarge" name="hawaiian_select" id="hawaiian_large" value="large">
+                        <nav class="price_links" #id="hawaiian_price">
                             <div class="price_wrapper">
-                                <label for="radioSmall">S</label>
+                                <label for="hawaiian_small">S</label>
                             </div>
                             <div class="price_wrapper">
-                                <label for="radioMedium">M</label>
+                                <label for="hawaiian_medium">M</label>
                             </div>
                             <div class="price_wrapper">
-                                <label for="radioLarge">L</label>
+                                <label for="hawaiian_large">L</label>
                             </div>
                         </nav>
-                        <div class="price">
+                        <div class="price" id="hawaiian_price">
                             <p id="smallprice">$9.99</p>
                             <p id="medprice">$13.99</p>
                             <p id="largeprice">$16.99</p>
@@ -126,9 +129,9 @@
                         an extra
                         layer of cheese.</p>
                     <div class="price_referance">
-                        <input type="radio" id="radioSmall" name="sizeselect" value="small" checked>
-                        <input type="radio" id="radioMedium" name="sizeselect" value="medium">
-                        <input type="radio" id="radioLarge" name="sizeselect" value="large">
+                        <input type="radio" class="radioSmall" name="sizeselect" value="small" checked>
+                        <input type="radio" class="radioMedium" name="sizeselect" value="medium">
+                        <input type="radio" class="radioLarge" name="sizeselect" value="large">
                         <nav class="price_links">
                             <div class="price_wrapper">
                                 <label for="radioSmall">S</label>
@@ -154,9 +157,9 @@
                         all
                         white-meat chicken, bacon and Provolone cheese.</p>
                     <div class="price_referance">
-                        <input type="radio" id="radioSmall" name="sizeselect" value="small" checked>
-                        <input type="radio" id="radioMedium" name="sizeselect" value="medium">
-                        <input type="radio" id="radioLarge" name="sizeselect" value="large">
+                        <input type="radio" class="radioSmall" name="sizeselect" value="small" checked>
+                        <input type="radio" class="radioMedium" name="sizeselect" value="medium">
+                        <input type="radio" class="radioLarge" name="sizeselect" value="large">
                         <nav class="price_links">
                             <div class="price_wrapper">
                                 <label for="radioSmall">S</label>
@@ -182,9 +185,9 @@
                         types of
                         cheese.</p>
                     <div class="price_referance">
-                        <input type="radio" id="radioSmall" name="sizeselect" value="small" checked>
-                        <input type="radio" id="radioMedium" name="sizeselect" value="medium">
-                        <input type="radio" id="radioLarge" name="sizeselect" value="large">
+                        <input type="radio" class="radioSmall" name="sizeselect" value="small" checked>
+                        <input type="radio" class="radioMedium" name="sizeselect" value="medium">
+                        <input type="radio" class="radioLarge" name="sizeselect" value="large">
                         <nav class="price_links">
                             <div class="price_wrapper">
                                 <label for="radioSmall">S</label>
@@ -210,9 +213,9 @@
                         with a
                         sprinkle of oregano.!</p>
                     <div class="price_referance">
-                        <input type="radio" id="radioSmall" name="sizeselect" value="small" checked>
-                        <input type="radio" id="radioMedium" name="sizeselect" value="medium">
-                        <input type="radio" id="radioLarge" name="sizeselect" value="large">
+                        <input type="radio" class="radioSmall" name="sizeselect" value="small" checked>
+                        <input type="radio" class="radioMedium" name="sizeselect" value="medium">
+                        <input type="radio" class="radioLarge" name="sizeselect" value="large">
                         <nav class="price_links">
                             <div class="price_wrapper">
                                 <label for="radioSmall">S</label>
@@ -239,9 +242,9 @@
                         feta, provolone, cheese made with 100% real mozzarella and sprinkled with a garlic herb
                         seasoning.</p>
                     <div class="price_referance">
-                        <input type="radio" id="radioSmall" name="sizeselect" value="small" checked>
-                        <input type="radio" id="radioMedium" name="sizeselect" value="medium">
-                        <input type="radio" id="radioLarge" name="sizeselect" value="large">
+                        <input type="radio" class="radioSmall" name="sizeselect" value="small" checked>
+                        <input type="radio" class="radioMedium" name="sizeselect" value="medium">
+                        <input type="radio" class="radioLarge" name="sizeselect" value="large">
                         <nav class="price_links">
                             <div class="price_wrapper">
                                 <label for="radioSmall">S</label>
@@ -267,9 +270,9 @@
                         topped with 3
                         different types of cheese.</p>
                     <div class="price_referance">
-                        <input type="radio" id="radioSmall" name="sizeselect" value="small" checked>
-                        <input type="radio" id="radioMedium" name="sizeselect" value="medium">
-                        <input type="radio" id="radioLarge" name="sizeselect" value="large">
+                        <input type="radio" class="radioSmall" name="sizeselect" value="small" checked>
+                        <input type="radio" class="radioMedium" name="sizeselect" value="medium">
+                        <input type="radio" class="radioLarge" name="sizeselect" value="large">
                         <nav class="price_links">
                             <div class="price_wrapper">
                                 <label for="radioSmall">S</label>
@@ -295,9 +298,9 @@
                         different
                         types of cheese..</p>
                     <div class="price_referance">
-                        <input type="radio" id="radioSmall" name="sizeselect" value="small" checked>
-                        <input type="radio" id="radioMedium" name="sizeselect" value="medium">
-                        <input type="radio" id="radioLarge" name="sizeselect" value="large">
+                        <input type="radio" class="radioSmall" name="sizeselect" value="small" checked>
+                        <input type="radio" class="radioMedium" name="sizeselect" value="medium">
+                        <input type="radio" class="radioLarge" name="sizeselect" value="large">
                         <nav class="price_links">
                             <div class="price_wrapper">
                                 <label for="radioSmall">S</label>
@@ -323,9 +326,9 @@
                         peppers,
                         fresh mushrooms and black olives with extra cheese..</p>
                     <div class="price_referance">
-                        <input type="radio" id="radioSmall" name="sizeselect" value="small" checked>
-                        <input type="radio" id="radioMedium" name="sizeselect" value="medium">
-                        <input type="radio" id="radioLarge" name="sizeselect" value="large">
+                        <input type="radio" class="radioSmall" name="sizeselect" value="small" checked>
+                        <input type="radio" class="radioMedium" name="sizeselect" value="medium">
+                        <input type="radio" class="radioLarge" name="sizeselect" value="large">
                         <nav class="price_links">
                             <div class="price_wrapper">
                                 <label for="radioSmall">S</label>
@@ -351,9 +354,9 @@
                         fresh
                         mushrooms, fresh onions and cheese.</p>
                     <div class="price_referance">
-                        <input type="radio" id="radioSmall" name="sizeselect" value="small" checked>
-                        <input type="radio" id="radioMedium" name="sizeselect" value="medium">
-                        <input type="radio" id="radioLarge" name="sizeselect" value="large">
+                        <input type="radio" class="radioSmall" name="sizeselect" value="small" checked>
+                        <input type="radio" class="radioMedium" name="sizeselect" value="medium">
+                        <input type="radio" class="radioLarge" name="sizeselect" value="large">
                         <nav class="price_links">
                             <div class="price_wrapper">
                                 <label for="radioSmall">S</label>
