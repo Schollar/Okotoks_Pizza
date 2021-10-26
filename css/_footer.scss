@@ -12,7 +12,7 @@
 
     >p {
         text-align: center;
-        font-size: xx-small;
+        font-size: 0.65rem;
     }
 
     img {
@@ -34,8 +34,14 @@
       &:hover {
           text-decoration: underline;
       }
+    }    
+}
+
+@media only screen and (min-width: 650px) {
+    #page_footer {
+        >p {
+            font-size: 1rem;
+        }
     }
 
-
-    
 }

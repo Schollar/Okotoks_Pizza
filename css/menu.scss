@@ -88,9 +88,7 @@
   font-family: Oswald, sans-serif;
   font-size: 1em;
   cursor: pointer;
-  box-shadow: inset 0 0 0 0 $secondary;
-  -webkit-transition: ease-out 0.5s;
-  -moz-transition: ease-out 0.5s;
+  box-shadow: inset 0 0 0 0 $hoverclr;
 
 }
   .price_wrapper:hover label {
@@ -111,7 +109,7 @@ place-items: center;
 .price_referance input[value="small"]:checked {
  
   ~.price_links>.price_wrapper label[class="small_price_label"] {
-    background-color: $secondary;
+    background-color: $hoverclr;
   }
   ~.price>.smallprice {
     left: 35%;
@@ -121,7 +119,7 @@ place-items: center;
   }
   .price_referance input[value="medium"]:checked {
   ~.price_links>.price_wrapper label[class="medium_price_label"] {
-    background-color: $secondary;
+    background-color: $hoverclr;
     }
   ~.price>.medprice {
     left: 35%;
@@ -132,7 +130,7 @@ place-items: center;
 .price_referance input[value="large"]:checked {
   
   ~.price_links>.price_wrapper label[class="large_price_label"] {
-    background-color: $secondary;
+    background-color: $hoverclr;
     }
   ~.price>.largeprice {
     left: 35%;
@@ -162,7 +160,7 @@ place-items: center;
     font-family: Oswald, sans-serif;
     font-size: 1.25em;
     cursor: pointer;
-    box-shadow: inset 0 0 0 0 $secondary;
+    box-shadow: inset 0 0 0 0 $hoverclr;
     -webkit-transition: ease-out 0.5s;
     -moz-transition: ease-out 0.5s;
     transition: ease-in-out 0.5s;
@@ -176,7 +174,7 @@ place-items: center;
   
     }
     ~#menu_links label[for="radioPizza"] {
-      background-color: $secondary;
+      background-color: $hoverclr;
     }
 }
 
@@ -201,7 +199,7 @@ input[value="pasta"]:checked {
 
 
     ~#menu_links label[for="radioPasta"] {
-      background-color: $secondary;
+      background-color: $hoverclr;
     }    
 }
 
@@ -212,13 +210,13 @@ input[value="drinks"]:checked {
     top: 75px;
   }
   ~#menu_links label[for="radioDrinks"] {
-    background-color: $secondary;
+    background-color: $hoverclr;
   }
 }
 
 #radio_wrapper:hover label {
   text-decoration: underline;
-  box-shadow: inset 400px 0 0 1px $secondary;
+  box-shadow: inset 400px 0 0 1px $hoverclr;
 }
 
 .last_card_tablet {
@@ -227,6 +225,8 @@ input[value="drinks"]:checked {
 .last_card {
   height: 200px;
 }
+
+// START OF TABLET CSS
 @media only screen and (min-width: 650px) {
  
   .last_card_tablet {

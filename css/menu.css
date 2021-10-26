@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Parisienne&family=Tangerine:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Parisienne&family=Tangerine:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -40,7 +38,7 @@ img, iframe {
       grid-template-columns: 2fr 1fr;
   height: 60px;
   min-width: 100%;
-  background-color: #DD6031;
+  background-color: #86bbd8;
   overflow-x: hidden;
   z-index: 11;
 }
@@ -60,7 +58,7 @@ img, iframe {
   place-items: center;
   height: 35px;
   background-color: white;
-  border-bottom: 1px solid #DD6031;
+  border-bottom: 1px solid #2f4858;
   color: black;
 }
 
@@ -96,7 +94,7 @@ img, iframe {
   color: black;
   font-weight: 800;
   text-decoration: none;
-  background-color: #DD6031;
+  background-color: #2f4858;
   place-self: center;
   max-width: 125px;
   margin: 3px;
@@ -110,7 +108,7 @@ img, iframe {
 }
 
 #info > a:hover {
-  background-color: #311E10;
+  background-color: #33658a;
 }
 
 #info p {
@@ -164,7 +162,7 @@ img, iframe {
   bottom: 60px;
   min-height: 25%;
   right: -1px;
-  background-color: #DD6031;
+  background-color: #2f4858ee;
   justify-items: center;
   z-index: 9;
   -webkit-transform: translate(100%, 0);
@@ -237,7 +235,7 @@ img, iframe {
 
 #page_footer > p {
   text-align: center;
-  font-size: xx-small;
+  font-size: 0.65rem;
 }
 
 #page_footer img {
@@ -260,6 +258,12 @@ img, iframe {
 
 #reviews a:hover {
   text-decoration: underline;
+}
+
+@media only screen and (min-width: 650px) {
+  #page_footer > p {
+    font-size: 1rem;
+  }
 }
 
 #page_container {
@@ -365,10 +369,8 @@ img, iframe {
   font-family: Oswald, sans-serif;
   font-size: 1em;
   cursor: pointer;
-  -webkit-box-shadow: inset 0 0 0 0 #DD6031;
-          box-shadow: inset 0 0 0 0 #DD6031;
-  -webkit-transition: ease-out 0.5s;
-  -moz-transition: ease-out 0.5s;
+  -webkit-box-shadow: inset 0 0 0 0 #33658a;
+          box-shadow: inset 0 0 0 0 #33658a;
 }
 
 .card .price_wrapper:hover label {
@@ -387,7 +389,7 @@ img, iframe {
 }
 
 .card .price_referance input[value="small"]:checked ~ .price_links > .price_wrapper label[class="small_price_label"] {
-  background-color: #DD6031;
+  background-color: #33658a;
 }
 
 .card .price_referance input[value="small"]:checked ~ .price > .smallprice {
@@ -397,7 +399,7 @@ img, iframe {
 }
 
 .card .price_referance input[value="medium"]:checked ~ .price_links > .price_wrapper label[class="medium_price_label"] {
-  background-color: #DD6031;
+  background-color: #33658a;
 }
 
 .card .price_referance input[value="medium"]:checked ~ .price > .medprice {
@@ -407,7 +409,7 @@ img, iframe {
 }
 
 .card .price_referance input[value="large"]:checked ~ .price_links > .price_wrapper label[class="large_price_label"] {
-  background-color: #DD6031;
+  background-color: #33658a;
 }
 
 .card .price_referance input[value="large"]:checked ~ .price > .largeprice {
@@ -437,8 +439,8 @@ img, iframe {
   font-family: Oswald, sans-serif;
   font-size: 1.25em;
   cursor: pointer;
-  -webkit-box-shadow: inset 0 0 0 0 #DD6031;
-          box-shadow: inset 0 0 0 0 #DD6031;
+  -webkit-box-shadow: inset 0 0 0 0 #33658a;
+          box-shadow: inset 0 0 0 0 #33658a;
   -webkit-transition: ease-out 0.5s;
   -webkit-transition: ease-in-out 0.5s;
   transition: ease-in-out 0.5s;
@@ -450,7 +452,7 @@ input[value="pizza"]:checked ~ #pizza_menu {
 }
 
 input[value="pizza"]:checked ~ #menu_links label[for="radioPizza"] {
-  background-color: #DD6031;
+  background-color: #33658a;
 }
 
 #menu_referance {
@@ -472,7 +474,7 @@ input[value="pasta"]:checked ~ #pasta_menu {
 }
 
 input[value="pasta"]:checked ~ #menu_links label[for="radioPasta"] {
-  background-color: #DD6031;
+  background-color: #33658a;
 }
 
 input[value="drinks"]:checked ~ #drink_menu {
@@ -481,13 +483,13 @@ input[value="drinks"]:checked ~ #drink_menu {
 }
 
 input[value="drinks"]:checked ~ #menu_links label[for="radioDrinks"] {
-  background-color: #DD6031;
+  background-color: #33658a;
 }
 
 #radio_wrapper:hover label {
   text-decoration: underline;
-  -webkit-box-shadow: inset 400px 0 0 1px #DD6031;
-          box-shadow: inset 400px 0 0 1px #DD6031;
+  -webkit-box-shadow: inset 400px 0 0 1px #33658a;
+          box-shadow: inset 400px 0 0 1px #33658a;
 }
 
 .last_card_tablet {

@@ -53,6 +53,7 @@
     text-align: center;
     color: $secondary;
     min-height: 50vh;
+    max-width: 95%;
     background-image: url(/images/doeball.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -80,10 +81,10 @@
     margin-top: 5px;
     margin-bottom: 10px;
     h1 {
-        font-family: 'Tangerine', cursive;
+        font-family: $headingfont;
         text-decoration: underline;
-        font-size: 3.25em;
-        text-align: center;
+        font-size: 2em;
+        text-align: left;
         margin-bottom: 10px;
     }
     p {
@@ -119,9 +120,9 @@
     display: grid;
     place-items: center;
     max-width: 95%;
-    row-gap: 50px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
+
 #contactinfo {
     max-width: 100%;
     text-align: center;
@@ -133,7 +134,7 @@
     }
 
     h1 {
-        font-family: Tangerine, cursive;
+        font-family: $headingfont;
         font-size: 3.25em;
         margin-bottom: 20px;
         text-decoration: underline;
@@ -142,9 +143,7 @@
     ul {
         list-style: none;
         font-weight: 700;
-    }
-
-    
+    }  
 }
 form {
     max-width: 100%;
@@ -156,7 +155,7 @@ form {
     border-radius: 25px;
 
     h3 {
-        font-family: Tangerine, cursive;
+        font-family: sans-serif;
         text-align: center;
         font-size: 2em;
     }
@@ -206,19 +205,24 @@ textarea {
     display: grid;
     place-items: center;
     >h1 {
-        font-family: Tangerine, cursive;
+        font-family: $headingfont;
         font-size: 3.25em;
         text-decoration: underline;
         margin-bottom: 50px;
     }
 
-    p:nth-child(3) {
+    a {
         margin-bottom: 50px;
+
+        &:visited {
+            color: black;
+        }
     }
     
 
     iframe {
-        max-width: 95%;
+        max-width: 75%;
+        max-height: 75%;
     }
 
 }
@@ -236,4 +240,21 @@ textarea {
         margin-bottom: 50px;
 
     }
+}
+
+@media only screen and (min-width: 650px) {
+        .order_now {
+            max-width: 75%;
+        }
+
+    #contact {
+        max-width: 85%;
+    }
+
+    #contactinfo {
+        font-size: 0.75em;
+        margin-right: 20px;
+    }
+
+
 }

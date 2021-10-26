@@ -6,14 +6,13 @@
 // #E85A4F
 // *****FIX ME******BACKROUND WHITE/BUTTONS BGCOLOR NOW/***********
 $bgcolor: #EABE7C;
-$fontcolor:black;
+$fontcolor: black;
 $fontcolorthru: #DD6031aa;
-$hoverclr: #311E10;
-$secondary: #DD6031;
-$secondarythru: #DD6031;
-
-@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Tangerine:wght@700&display=swap');
-
+$hoverclr: #33658a;
+$secondary: #2f4858;
+$secondarythru: #2f4858ee;
+$headingfont: 'Exo 2';
+$new: #86bbd8;
 * {
     margin: 0;
     padding: 0;
