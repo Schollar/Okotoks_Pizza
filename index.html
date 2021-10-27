@@ -7,14 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,500&family=Oswald:wght@200;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Home</title>
 </head>
 
 <body>
     <div id="page_container">
-        <header id="desktop_header"></header>
+
         <header id="mobile" class="header-grid">
             <section id="info">
                 <a href="tel:555-555-1234">555-555-1234</a>
@@ -28,7 +29,6 @@
                         <span></span>
                         <span></span>
                     </div>
-
                     <nav id="menu">
                         <a href="index.html">Home</a>
                         <a href="/pages/menu.html">Menu</a>
@@ -39,9 +39,18 @@
                 </div>
             </nav>
         </header>
-        <section id="logo">
+        <section class="header_logo">
             <img src="/images/logo.png" alt="Okotoks Pizza Logo">
             <p>50% OFF ALL PIZZA'S AFTER 930PM EVERYDAY!</p>
+            <header id="desktop_header">
+                <nav id="desktop_menu">
+                    <a href="index.html">Home</a>
+                    <a href="/pages/menu.html">Menu</a>
+                    <a href="#location">Locate</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#about_us">Info</a>
+                </nav>
+            </header>
         </section>
         <section id="top_content">
             <img src="/images/pizza.jpg" alt="A picture of a cheese pizza with Peppers beside it.">
@@ -51,6 +60,11 @@
         </div>
         <div id="line"></div>
         <section id="awards">
+            <section id="desktop_only_awards">
+                <p>Cooked in artisan built wood fired ovens brought over from Naples, their Pizzaiolos take pride in
+                    making all pies to pizza Napoletana standard. Their pizza dough is a hybrid yeast and sourdough,
+                    proofed for over 48 hours which tastes absolutely fantastic.</p>
+            </section>
             <!-- THIS DIV JUST BEING USED AS A WRAPPER TO HAVE BOTH TAGS IN ONE GRID ITEM -->
             <div>
                 <h1>VOTED BEST PIZZA IN OKOTOK'S 13 YEARS IN A ROW!*</h1>

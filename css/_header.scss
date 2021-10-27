@@ -18,12 +18,12 @@
      }
     }
 
-    #logo {
+    .header_logo {
         display: grid;
         grid-auto-flow: column;
         min-width: 100%;
         place-items: center;
-        height: 35px;
+        height: 6vh;
         background-color: $secondary;
         border-bottom: 1px solid $secondary;
         color: $fontcolor;
@@ -36,8 +36,9 @@
     
         p {
             text-align: center;
+            font-family: Oswald, sans-serif;
             font-weight: 700;
-            font-size: 14px;
+            font-size: 11px;
             margin-top: 2px;
     
         }
@@ -197,4 +198,44 @@
 
 }
 
+@media only screen and (min-width: 1024px)  {
+    #mobile {
+        display: none;
+    }
+    #top_content {
+        margin-top: 150px;
+    }
+    .header_logo {
+        grid-template-columns: 1fr 2fr 2fr;
+        height: 100px;
+        position: fixed;
+        top: 0;
+        left: 0;
 
+        >img {
+            width: 75%;
+        }
+
+        >p {
+            font-size: 1.5em;
+            text-shadow: 2px 2px 1px $hoverclr;
+        }
+        >#desktop_header>#desktop_menu {
+
+            >a {
+                text-decoration: none;
+                margin-left: 20px;
+                color: $fontcolor;
+                font-size: 1.5em;
+                font-weight: 700;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    #desktop_header {
+        display: grid;
+    }
+}

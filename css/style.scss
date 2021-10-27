@@ -74,6 +74,9 @@
         color: white;
         margin-top: 50px;
     }
+    #desktop_only_awards {
+        display: none;
+    }
 }
 #about_us {
 
@@ -162,9 +165,9 @@
         list-style: none;
         font-weight: 700;
         margin-bottom: 50px;
-    }  
-}
-form {
+    } 
+    
+    ~form {
     max-width: 100%;
     margin-bottom: 25px;
     padding: 25px;
@@ -203,22 +206,25 @@ form {
 
         &:active {
             background-color: $hoverclr;
+             }
         }
-    }
-}
-
-input, textarea {
+    >input, textarea {
     font-family: Oswald;
     text-align: left;
     font-size: 14px;
     width: 100%;
 }
 
-textarea {
+    ~textarea {
     text-align: center;
     vertical-align: top;
     height: 75px;
 }
+
+
+    } 
+}
+
 
 #location {
     display: grid;
@@ -274,10 +280,42 @@ textarea {
     #awards {
         background-image: url(/images/secondawards.jpg);
 
+        h1 {
+            max-width: 90%;
+            margin-left: 5%;
+            
+        }
+
         h6 {
             font-size: 0.8em;
             margin-top: 25px;
             font-weight: 900;
         }
     }
+}
+
+
+
+#about_us {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+
+#philosophy {
+
+    >img {
+        max-width: 85%;
+    }
+}
+}
+@media only screen and (min-width: 1024px) {
+    #awards {
+        grid-auto-flow: row;
+        
+        #desktop_only_awards {
+            
+            display: block;
+        }
+
+    }
+
 }

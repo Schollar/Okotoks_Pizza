@@ -50,28 +50,29 @@ img, iframe {
       align-self: center;
 }
 
-#logo {
+.header_logo {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: column;
   min-width: 100%;
   place-items: center;
-  height: 35px;
+  height: 6vh;
   background-color: #2f4858;
   border-bottom: 1px solid #2f4858;
   color: black;
 }
 
-#logo img {
+.header_logo img {
   width: 75px;
   margin-left: 2px;
   margin-top: 2px;
 }
 
-#logo p {
+.header_logo p {
   text-align: center;
+  font-family: Oswald, sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 11px;
   margin-top: 2px;
 }
 
@@ -227,6 +228,44 @@ img, iframe {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  #mobile {
+    display: none;
+  }
+  #top_content {
+    margin-top: 150px;
+  }
+  .header_logo {
+    -ms-grid-columns: 1fr 2fr 2fr;
+        grid-template-columns: 1fr 2fr 2fr;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .header_logo > img {
+    width: 75%;
+  }
+  .header_logo > p {
+    font-size: 1.5em;
+    text-shadow: 2px 2px 1px #33658a;
+  }
+  .header_logo > #desktop_header > #desktop_menu > a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: black;
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+  .header_logo > #desktop_header > #desktop_menu > a:hover {
+    text-decoration: underline;
+  }
+  #desktop_header {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
 #page_footer {
   display: -ms-grid;
   display: grid;
@@ -273,6 +312,12 @@ img, iframe {
 @media only screen and (min-width: 650px) {
   #page_footer > p {
     font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #page_footer {
+    margin-bottom: 0;
   }
 }
 
