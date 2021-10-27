@@ -57,7 +57,7 @@ img, iframe {
   min-width: 100%;
   place-items: center;
   height: 35px;
-  background-color: white;
+  background-color: #2f4858;
   border-bottom: 1px solid #2f4858;
   color: black;
 }
@@ -177,6 +177,7 @@ img, iframe {
   color: black;
   font-size: 24px;
   text-decoration: none;
+  margin-bottom: 15px;
   margin-top: 10px;
   z-index: 9;
 }
@@ -215,6 +216,15 @@ img, iframe {
 
 #desktop_header {
   display: none;
+}
+
+@media only screen and (min-width: 650px) {
+  #logo {
+    height: 50px;
+  }
+  #logo img {
+    width: 100px;
+  }
 }
 
 #page_footer {

@@ -57,7 +57,7 @@ img, iframe {
   min-width: 100%;
   place-items: center;
   height: 35px;
-  background-color: white;
+  background-color: #2f4858;
   border-bottom: 1px solid #2f4858;
   color: black;
 }
@@ -177,6 +177,7 @@ img, iframe {
   color: black;
   font-size: 24px;
   text-decoration: none;
+  margin-bottom: 15px;
   margin-top: 10px;
   z-index: 9;
 }
@@ -215,6 +216,15 @@ img, iframe {
 
 #desktop_header {
   display: none;
+}
+
+@media only screen and (min-width: 650px) {
+  #logo {
+    height: 50px;
+  }
+  #logo img {
+    width: 100px;
+  }
 }
 
 #page_footer {
@@ -299,6 +309,7 @@ img, iframe {
   font-family: Oswald;
   font-weight: 600;
   width: 95%;
+  max-width: 400px;
   border-radius: 10px;
   background-color: #2f4858;
 }
@@ -335,12 +346,16 @@ img, iframe {
 }
 
 #awards h6 {
-  color: black;
-  margin-top: 100px;
+  color: white;
+  margin-top: 50px;
 }
 
 #about_us {
   color: black;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   text-align: left;
   margin-top: 5px;
   margin-bottom: 10px;
@@ -351,15 +366,30 @@ img, iframe {
   text-decoration: underline;
   font-size: 2em;
   text-align: left;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 #about_us p {
   color: black;
   text-align: left;
   margin-left: 2.5%;
+  margin-bottom: 20px;
   font-family: Trebuchet MS;
   margin-right: 2.5%;
+}
+
+#about_us #philosophy {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+#about_us #philosophy p {
+  margin-bottom: 40px;
+}
+
+#about_us #philosophy > img {
+  width: 95%;
 }
 
 #floated {
@@ -403,14 +433,15 @@ img, iframe {
 
 #contactinfo h1 {
   font-family: "Exo 2";
-  font-size: 3.25em;
-  margin-bottom: 20px;
+  font-size: 2em;
+  margin-bottom: 40px;
   text-decoration: underline;
 }
 
 #contactinfo ul {
   list-style: none;
   font-weight: 700;
+  margin-bottom: 50px;
 }
 
 form {
@@ -427,7 +458,7 @@ form {
 form h3 {
   font-family: sans-serif;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 form ul {
@@ -480,7 +511,7 @@ textarea {
 
 #location > h1 {
   font-family: "Exo 2";
-  font-size: 3.25em;
+  font-size: 2em;
   text-decoration: underline;
   margin-bottom: 50px;
 }
@@ -511,15 +542,20 @@ textarea {
 }
 
 @media only screen and (min-width: 650px) {
-  .order_now {
-    max-width: 75%;
-  }
   #contact {
     max-width: 85%;
   }
   #contactinfo {
     font-size: 0.75em;
     margin-right: 20px;
+  }
+  #awards {
+    background-image: url(/images/secondawards.jpg);
+  }
+  #awards h6 {
+    font-size: 0.8em;
+    margin-top: 25px;
+    font-weight: 900;
   }
 }
 /*# sourceMappingURL=style.css.map */
