@@ -38,7 +38,7 @@ img, iframe {
       grid-template-columns: 2fr 1fr;
   height: 60px;
   min-width: 100%;
-  background-color: #86bbd8;
+  background-color: #9f86c0;
   overflow-x: hidden;
   z-index: 11;
 }
@@ -57,8 +57,8 @@ img, iframe {
   min-width: 100%;
   place-items: center;
   height: 6vh;
-  background-color: #2f4858;
-  border-bottom: 1px solid #2f4858;
+  background-color: #9f86c0;
+  border-bottom: 1px solid #be95c4;
   color: black;
 }
 
@@ -95,25 +95,23 @@ img, iframe {
   color: black;
   font-weight: 800;
   text-decoration: none;
-  background-color: #2f4858;
+  background-color: #be95c4;
   place-self: center;
   max-width: 125px;
   margin: 3px;
-  padding-top: 2px;
   width: 50%;
   font-size: 13px;
-  border-radius: 9px;
   height: 20px;
   -webkit-box-shadow: 1px 1px 4px 0px black;
           box-shadow: 1px 1px 4px 0px black;
 }
 
 #info > a:hover {
-  background-color: #33658a;
+  background-color: #e0b1cb;
 }
 
 #info p {
-  font-size: 11px;
+  font-size: 13px;
   color: black;
   font-weight: 700;
   text-align: center;
@@ -159,11 +157,10 @@ img, iframe {
   position: fixed;
   row-gap: 10px;
   min-width: 100%;
-  border-radius: 8px 8px 0px 0px;
   bottom: 60px;
   min-height: 25%;
   right: -1px;
-  background-color: #2f4858ee;
+  background-color: #be95c4ee;
   justify-items: center;
   z-index: 9;
   -webkit-transform: translate(100%, 0);
@@ -177,6 +174,7 @@ img, iframe {
 #menu a {
   color: black;
   font-size: 24px;
+  font-weight: 500;
   text-decoration: none;
   margin-bottom: 15px;
   margin-top: 10px;
@@ -242,13 +240,14 @@ img, iframe {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 5;
   }
   .header_logo > img {
     width: 75%;
   }
   .header_logo > p {
     font-size: 1.5em;
-    text-shadow: 2px 2px 1px #33658a;
+    text-shadow: 2px 2px 1px #e0b1cb;
   }
   .header_logo > #desktop_header > #desktop_menu > a {
     text-decoration: none;
@@ -424,8 +423,8 @@ img, iframe {
   font-family: Oswald, sans-serif;
   font-size: 1em;
   cursor: pointer;
-  -webkit-box-shadow: inset 0 0 0 0 #33658a;
-          box-shadow: inset 0 0 0 0 #33658a;
+  -webkit-box-shadow: inset 0 0 0 0 #e0b1cb;
+          box-shadow: inset 0 0 0 0 #e0b1cb;
 }
 
 .card .price_wrapper:hover label {
@@ -444,7 +443,7 @@ img, iframe {
 }
 
 .card .price_referance input[value="small"]:checked ~ .price_links > .price_wrapper label[class="small_price_label"] {
-  background-color: #33658a;
+  background-color: #e0b1cb;
 }
 
 .card .price_referance input[value="small"]:checked ~ .price > .smallprice {
@@ -454,7 +453,7 @@ img, iframe {
 }
 
 .card .price_referance input[value="medium"]:checked ~ .price_links > .price_wrapper label[class="medium_price_label"] {
-  background-color: #33658a;
+  background-color: #e0b1cb;
 }
 
 .card .price_referance input[value="medium"]:checked ~ .price > .medprice {
@@ -464,7 +463,7 @@ img, iframe {
 }
 
 .card .price_referance input[value="large"]:checked ~ .price_links > .price_wrapper label[class="large_price_label"] {
-  background-color: #33658a;
+  background-color: #e0b1cb;
 }
 
 .card .price_referance input[value="large"]:checked ~ .price > .largeprice {
@@ -494,8 +493,8 @@ img, iframe {
   font-family: Oswald, sans-serif;
   font-size: 1.25em;
   cursor: pointer;
-  -webkit-box-shadow: inset 0 0 0 0 #33658a;
-          box-shadow: inset 0 0 0 0 #33658a;
+  -webkit-box-shadow: inset 0 0 0 0 #e0b1cb;
+          box-shadow: inset 0 0 0 0 #e0b1cb;
   -webkit-transition: ease-out 0.5s;
   -webkit-transition: ease-in-out 0.5s;
   transition: ease-in-out 0.5s;
@@ -507,7 +506,7 @@ input[value="pizza"]:checked ~ #pizza_menu {
 }
 
 input[value="pizza"]:checked ~ #menu_links label[for="radioPizza"] {
-  background-color: #33658a;
+  background-color: #e0b1cb;
 }
 
 #menu_referance {
@@ -529,7 +528,7 @@ input[value="pasta"]:checked ~ #pasta_menu {
 }
 
 input[value="pasta"]:checked ~ #menu_links label[for="radioPasta"] {
-  background-color: #33658a;
+  background-color: #e0b1cb;
 }
 
 input[value="drinks"]:checked ~ #drink_menu {
@@ -538,13 +537,13 @@ input[value="drinks"]:checked ~ #drink_menu {
 }
 
 input[value="drinks"]:checked ~ #menu_links label[for="radioDrinks"] {
-  background-color: #33658a;
+  background-color: #e0b1cb;
 }
 
 #radio_wrapper:hover label {
   text-decoration: underline;
-  -webkit-box-shadow: inset 400px 0 0 1px #33658a;
-          box-shadow: inset 400px 0 0 1px #33658a;
+  -webkit-box-shadow: inset 400px 0 0 1px #e0b1cb;
+          box-shadow: inset 400px 0 0 1px #e0b1cb;
 }
 
 .last_card_tablet {

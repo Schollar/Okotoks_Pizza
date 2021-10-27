@@ -9,7 +9,7 @@
     grid-template-columns: 2fr 1fr;
     height: 60px;
     min-width: 100%;
-    background-color: $new;
+    background-color: $bgcolor;
     overflow-x: hidden;
     z-index: 11;
      img {
@@ -24,9 +24,9 @@
         min-width: 100%;
         place-items: center;
         height: 6vh;
-        background-color: $secondary;
+        background-color: $bgcolor;
         border-bottom: 1px solid $secondary;
-        color: $fontcolor;
+        color: black;
     
         img {
             width: 75px;
@@ -51,6 +51,7 @@
     display: grid;
     row-gap: 2.5px;
     text-align: center;
+    
     >a {
         color: $fontcolor;
         font-weight: 800;
@@ -59,10 +60,8 @@
         place-self: center;
         max-width: 125px;
         margin: 3px;
-        padding-top: 2px;
         width: 50%;
         font-size: 13px;
-        border-radius: 9px;
         height: 20px;
         box-shadow: 1px 1px 4px 0px $fontcolor;
 
@@ -71,7 +70,7 @@
         }
     }
     p {
-        font-size: 11px;
+        font-size: 13px;
         color: $fontcolor;
         font-weight: 700;
         text-align: center;
@@ -105,7 +104,7 @@
         margin-bottom: 5px;
         width: 33px;
         height: 5px;
-        background-color: $fontcolor;
+        background-color: black;
         z-index: 2;
         transform-origin: 0px 0px;
   
@@ -120,11 +119,10 @@
     position: fixed;
     row-gap: 10px;
     min-width: 100%;
-    border-radius: 8px 8px 0px 0px;
     bottom: 60px;
     min-height: 25%;
     right: -1px;
-    background-color: $secondarythru;
+    background-color: $bgthru;
     justify-items: center;
     z-index: 9;
     
@@ -136,6 +134,7 @@
     a {
         color: $fontcolor;
         font-size: 24px;
+        font-weight: 500;
         text-decoration: none;
         margin-bottom: 15px;
         margin-top: 10px;
@@ -211,6 +210,7 @@
         position: fixed;
         top: 0;
         left: 0;
+        z-index: 5;
 
         >img {
             width: 75%;
@@ -225,7 +225,7 @@
             >a {
                 text-decoration: none;
                 margin-left: 20px;
-                color: $fontcolor;
+                color: black;
                 font-size: 1.5em;
                 font-weight: 700;
 
