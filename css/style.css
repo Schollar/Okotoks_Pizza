@@ -38,7 +38,7 @@ img, iframe {
       grid-template-columns: 2fr 1fr;
   height: 60px;
   min-width: 100%;
-  background-color: #9f86c0;
+  background-color: #CCB6E7;
   overflow-x: hidden;
   z-index: 11;
 }
@@ -57,8 +57,7 @@ img, iframe {
   min-width: 100%;
   place-items: center;
   height: 6vh;
-  background-color: #9f86c0;
-  border-bottom: 1px solid #be95c4;
+  background-color: #CCB6E7;
   color: black;
 }
 
@@ -95,7 +94,7 @@ img, iframe {
   color: black;
   font-weight: 800;
   text-decoration: none;
-  background-color: #be95c4;
+  background-color: #b78aee8c;
   place-self: center;
   max-width: 125px;
   margin: 3px;
@@ -107,7 +106,7 @@ img, iframe {
 }
 
 #info > a:hover {
-  background-color: #e0b1cb;
+  background-color: #F9A252;
 }
 
 #info p {
@@ -160,7 +159,7 @@ img, iframe {
   bottom: 60px;
   min-height: 25%;
   right: -1px;
-  background-color: #be95c4ee;
+  background-color: #CCB6E7ee;
   justify-items: center;
   z-index: 9;
   -webkit-transform: translate(100%, 0);
@@ -247,7 +246,7 @@ img, iframe {
   }
   .header_logo > p {
     font-size: 1.5em;
-    text-shadow: 2px 2px 1px #e0b1cb;
+    text-shadow: 2px 2px 1px #F9A252;
   }
   .header_logo > #desktop_header > #desktop_menu > a {
     text-decoration: none;
@@ -334,6 +333,7 @@ img, iframe {
 #top_content {
   display: -ms-grid;
   display: grid;
+  position: relative;
   justify-items: center;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
@@ -342,6 +342,27 @@ img, iframe {
 
 #top_content img {
   width: 95%;
+  height: 100%;
+  z-index: 2;
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
+  -webkit-transition: all 0.3S ease-in-out;
+  transition: all 0.3S ease-in-out;
+}
+
+#top_content img:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  -webkit-transform: translateX(-5px) translateY(-5px);
+          transform: translateX(-5px) translateY(-5px);
+}
+
+#top_content img ~ .image_border {
+  position: absolute;
+  width: 94%;
+  height: calc(100% - 3px);
+  border: 1px solid black;
+  z-index: 1;
 }
 
 .order_now {
@@ -354,11 +375,11 @@ img, iframe {
   font-weight: 600;
   width: 95%;
   max-width: 400px;
-  background-color: #be95c4;
+  background-color: #B14E4E;
 }
 
 .order_now:hover {
-  background-color: #e0b1cb;
+  background-color: #F9A252;
 }
 
 .order_now a {
@@ -371,7 +392,7 @@ img, iframe {
   display: grid;
   place-items: center;
   text-align: center;
-  color: #be95c4;
+  color: #B14E4E;
   min-height: 50vh;
   max-width: 95%;
   background-image: url(/images/doeball.jpg);
@@ -448,7 +469,7 @@ img, iframe {
 
 #line {
   place-self: center;
-  background-color: #be95c4;
+  background-color: #B14E4E;
   width: 85%;
   height: 2px;
   margin: 5px;
@@ -475,7 +496,7 @@ img, iframe {
 
 #contactinfo a {
   text-decoration: none;
-  color: #be95c4;
+  color: #B14E4E;
 }
 
 #contactinfo h1 {
@@ -528,11 +549,11 @@ img, iframe {
   font-family: Oswald;
   margin-left: 40%;
   font-weight: 700;
-  background-color: #be95c4;
+  background-color: #B14E4E;
 }
 
 #contactinfo ~ form button:active {
-  background-color: #e0b1cb;
+  background-color: #F9A252;
 }
 
 #contactinfo ~ form > input, #contactinfo ~ form textarea {

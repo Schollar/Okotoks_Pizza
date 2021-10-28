@@ -14,7 +14,6 @@
 
 <body>
     <div id="page_container">
-        <header id="desktop_header"></header>
         <header id="mobile" class="header-grid">
             <section id="info">
                 <a href="tel:555-555-1234">555-555-1234</a>
@@ -43,6 +42,15 @@
         <section class="header_logo">
             <img src="/images/logo.png" alt="Okotoks Pizza Logo">
             <p>50% OFF ALL PIZZA'S AFTER 930PM EVERYDAY!</p>
+            <header id="desktop_header">
+                <nav id="desktop_menu">
+                    <a href="../index.html">Home</a>
+                    <a href="/pages/menu.html">Menu</a>
+                    <a href="#location">Locate</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#about_us">Info</a>
+                </nav>
+            </header>
         </section>
         <div id="menu_referance">
             <input type="radio" id="radioPizza" name="menuselect" value="pizza" checked>
@@ -50,7 +58,7 @@
             <input type="radio" id="radioDrinks" name="menuselect" value="drinks">
             <nav id="menu_links">
                 <div id="radio_wrapper">
-                    <label for="radioPizza">Pizza </label>
+                    <label for="radioPizza">Pizza</label>
                 </div>
                 <p> / </p>
                 <div id="radio_wrapper">
@@ -250,9 +258,9 @@
                     <div class="price_referance">
                         <input type="radio" class="radioSmall" name="veggie_select" id="veggie_price_small"
                             value="small" checked>
-                        <input type="radio" class="radioMedium" name="veggie_select" id="veggie_price_small"
+                        <input type="radio" class="radioMedium" name="veggie_select" id="veggie_price_medium"
                             value="medium">
-                        <input type="radio" class="radioLarge" name="veggie_select" id="veggie_price_small"
+                        <input type="radio" class="radioLarge" name="veggie_select" id="veggie_price_large"
                             value="large">
                         <nav class="price_links">
                             <div class="price_wrapper">
