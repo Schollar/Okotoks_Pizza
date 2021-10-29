@@ -8,8 +8,9 @@
     bottom: 0;
     grid-template-columns: 2fr 1fr;
     height: 60px;
-    width: 100%;
+    min-width: 100%;
     background-color: $bgcolor;
+    overflow-x: hidden;
     z-index: 4;
      img {
          width: 75px;
@@ -22,7 +23,7 @@
         grid-auto-flow: column;
         min-width: 100%;
         place-items: center;
-        height: 7vh;
+        height: 6vh;
         background-color: $bgcolor;
         color: black;
     
@@ -191,6 +192,8 @@
 
 }
 
+
+
 }
 
 @media only screen and (min-width: 1024px)  {
@@ -209,12 +212,12 @@
         z-index: 5;
 
         >img {
-            width: 75%;
+            width: 65%;
         }
 
         >p {
             font-size: 1.5em;
-            text-shadow: 2px 2px 1px $hoverclr;
+            text-shadow: 2px 2px 1px $phonebuttonclr;
         }
         >#desktop_header>#desktop_menu {
 

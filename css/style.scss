@@ -21,16 +21,8 @@
     row-gap: 10px;
 
     img {
-        width: 95%;
-        height: 100%;
-        z-index: 2;
-        filter: grayscale(80%);
-        transition: all 0.3S ease-in-out;
-        
-        &:hover {
-            filter: grayscale(0%);
-            transform: translateX(-5px) translateY(-5px);
-             }    
+        width: 100%;
+        height: 100%;     
     }
     
 }
@@ -61,32 +53,34 @@
     display: grid;
     position: relative;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    column-gap: 10px;
+    column-gap: 20px;
+    row-gap: 50px;
     place-items: center;
     text-align: center;
     color: $secondary;
-    min-height: 50vh;
+    min-height: 70vh;
     max-width: 95%;
 
 
 
     #awards_section {
         display: grid;
+        position: relative;
         place-items: center;
         background-image: url(/images/doeball.jpg);
         background-repeat: no-repeat;
         background-position: center;
-        width: 85%;
-        height: 100%;
+        background-size: cover;
+        min-height: 400px;
            
         
         h1 {
         position: relative;
-        text-shadow: 3px 3px black;
-        font-size: 28px;
+        text-shadow: 1px 1px $hoverclr;
+        font-size: 1.5rem;
         font-weight: 800;
-        max-width: 95%;
         margin: 10px;
+        width: 65%;
         z-index: 2;
 
             }
@@ -94,8 +88,6 @@
            
         img {
         position: absolute;
-        width: 50%;
-        height: 100%;
         right: 0;
         top: 0;
         z-index: 0;
@@ -115,8 +107,8 @@
     }
 
     iframe {
-        max-width: 95%;
-        margin-bottom: 40px;
+        width: 95%;
+        height: 400px;
     }
 }
 #about_us {
@@ -153,7 +145,7 @@
         }
 
         >img {
-            width: 95%;
+            max-width: 85%;
         }
     }
 }
@@ -361,4 +353,11 @@
 
     }
 
+
+    #line {
+        width: 75%;
+    }
+    #about_us {
+        width: 70%;
+    }
 }
