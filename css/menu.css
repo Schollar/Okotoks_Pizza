@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,500&family=Oswald:wght@200;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,500&family=Oswald:wght@200;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +14,14 @@ img, iframe {
   max-width: 100%;
 }
 
+.image_border {
+  position: absolute;
+  width: 94%;
+  height: calc(100% - 3px);
+  border: 1px solid black;
+  z-index: 1;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +34,14 @@ p {
 
 img, iframe {
   max-width: 100%;
+}
+
+.image_border {
+  position: absolute;
+  width: 94%;
+  height: calc(100% - 3px);
+  border: 1px solid black;
+  z-index: 1;
 }
 
 .header-grid {
@@ -37,10 +55,9 @@ img, iframe {
   -ms-grid-columns: 2fr 1fr;
       grid-template-columns: 2fr 1fr;
   height: 60px;
-  min-width: 100%;
+  width: 100%;
   background-color: #CCB6E7;
-  overflow-x: hidden;
-  z-index: 11;
+  z-index: 4;
 }
 
 .header-grid img {
@@ -56,7 +73,7 @@ img, iframe {
   grid-auto-flow: column;
   min-width: 100%;
   place-items: center;
-  height: 6vh;
+  height: 7vh;
   background-color: #CCB6E7;
   color: black;
 }
@@ -319,6 +336,14 @@ img, iframe {
   }
 }
 
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 #page_container {
   display: -ms-grid;
   display: grid;
@@ -486,8 +511,7 @@ img, iframe {
 
 #menu_links label {
   margin: 5px;
-  display: inline-block;
-  padding: 5px 10px;
+  padding: 0px 10px 2px;
   border-radius: 10px;
   font-family: Oswald, sans-serif;
   font-size: 1.25em;
@@ -497,6 +521,12 @@ img, iframe {
   -webkit-transition: ease-out 0.5s;
   -webkit-transition: ease-in-out 0.5s;
   transition: ease-in-out 0.5s;
+}
+
+#menu_links label:hover {
+  text-decoration: underline;
+  -webkit-box-shadow: inset 400px 0 0 1px #F9A252;
+          box-shadow: inset 400px 0 0 1px #F9A252;
 }
 
 input[value="pizza"]:checked ~ #pizza_menu {
@@ -539,12 +569,6 @@ input[value="drinks"]:checked ~ #menu_links label[for="radioDrinks"] {
   background-color: #F9A252;
 }
 
-#radio_wrapper:hover label {
-  text-decoration: underline;
-  -webkit-box-shadow: inset 400px 0 0 1px #F9A252;
-          box-shadow: inset 400px 0 0 1px #F9A252;
-}
-
 .last_card_tablet {
   display: none;
 }
@@ -557,6 +581,13 @@ input[value="drinks"]:checked ~ #menu_links label[for="radioDrinks"] {
   .last_card_tablet {
     display: inline;
     height: 200px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #menu_referance {
+    position: relative;
+    top: 150px;
   }
 }
 /*# sourceMappingURL=menu.css.map */

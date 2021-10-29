@@ -8,10 +8,9 @@
     bottom: 0;
     grid-template-columns: 2fr 1fr;
     height: 60px;
-    min-width: 100%;
+    width: 100%;
     background-color: $bgcolor;
-    overflow-x: hidden;
-    z-index: 11;
+    z-index: 4;
      img {
          width: 75px;
          align-self: center;
@@ -23,7 +22,7 @@
         grid-auto-flow: column;
         min-width: 100%;
         place-items: center;
-        height: 6vh;
+        height: 7vh;
         background-color: $bgcolor;
         color: black;
     
@@ -191,8 +190,6 @@
     }
 
 }
-
-
 
 }
 

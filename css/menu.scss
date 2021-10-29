@@ -1,7 +1,12 @@
 @import 'global';
 @import 'header';
 @import 'footer';
-
+html {
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+}
 #page_container {
   display: -ms-grid;
   display: grid;
@@ -154,8 +159,7 @@ place-items: center;
 
 #menu_links label {
     margin: 5px;
-    display: inline-block;
-    padding: 5px 10px;
+    padding: 0px 10px 2px;
     border-radius: 10px;
     font-family: Oswald, sans-serif;
     font-size: 1.25em;
@@ -164,6 +168,13 @@ place-items: center;
     -webkit-transition: ease-out 0.5s;
     -moz-transition: ease-out 0.5s;
     transition: ease-in-out 0.5s;
+
+
+        &:hover {
+          text-decoration: underline;
+          box-shadow: inset 400px 0 0 1px $hoverclr;
+        }
+    
 
 }
   input[value="pizza"]:checked {
@@ -186,8 +197,8 @@ place-items: center;
     position: fixed;
     opacity: 0;
     width: 0;
-}
-
+    }
+    
 }
 
 input[value="pasta"]:checked {
@@ -214,10 +225,7 @@ input[value="drinks"]:checked {
   }
 }
 
-#radio_wrapper:hover label {
-  text-decoration: underline;
-  box-shadow: inset 400px 0 0 1px $hoverclr;
-}
+
 
 .last_card_tablet {
   display: none;
@@ -235,3 +243,9 @@ input[value="drinks"]:checked {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  #menu_referance {
+    position: relative;
+    top: 150px;
+  }
+}
