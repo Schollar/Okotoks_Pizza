@@ -10,7 +10,8 @@ p {
   font-family: Oswald;
 }
 
-img, iframe {
+img,
+iframe {
   max-width: 100%;
 }
 
@@ -21,8 +22,8 @@ img, iframe {
   position: relative;
   -webkit-filter: grayscale(80%);
           filter: grayscale(80%);
-  -webkit-transition: all 0.3S ease-in-out;
-  transition: all 0.3S ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   opacity: 1;
 }
 
@@ -71,7 +72,8 @@ p {
   font-family: Oswald;
 }
 
-img, iframe {
+img,
+iframe {
   max-width: 100%;
 }
 
@@ -82,8 +84,8 @@ img, iframe {
   position: relative;
   -webkit-filter: grayscale(80%);
           filter: grayscale(80%);
-  -webkit-transition: all 0.3S ease-in-out;
-  transition: all 0.3S ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   opacity: 1;
 }
 
@@ -195,19 +197,19 @@ img, iframe {
   color: black;
   font-weight: 800;
   text-decoration: none;
-  background-color: #B14E4E;
+  background-color: #b14e4e;
   place-self: center;
   max-width: 125px;
   margin: 3px;
   width: 50%;
   font-size: 13px;
   height: 20px;
-  -webkit-box-shadow: 1px 1px 4px 0px #B14E4E;
-          box-shadow: 1px 1px 4px 0px #B14E4E;
+  -webkit-box-shadow: 1px 1px 4px 0px #b14e4e;
+          box-shadow: 1px 1px 4px 0px #b14e4e;
 }
 
 #mobile #info > a:hover {
-  background-color: #F9A252;
+  background-color: #f9a252;
 }
 
 #mobile #info p {
@@ -350,7 +352,7 @@ img, iframe {
   }
   .header_logo > p {
     font-size: 1.5em;
-    text-shadow: 1px 1px 1px #B14E4E;
+    text-shadow: 1px 1px 1px #b14e4e;
   }
   .header_logo > #desktop_header > #desktop_menu > a {
     text-decoration: none;
@@ -540,8 +542,8 @@ img, iframe {
   font-family: Oswald, sans-serif;
   font-size: 1em;
   cursor: pointer;
-  -webkit-box-shadow: inset 0 0 0 0 #F9A252;
-          box-shadow: inset 0 0 0 0 #F9A252;
+  -webkit-box-shadow: inset 0 0 0 0 #f9a252;
+          box-shadow: inset 0 0 0 0 #f9a252;
 }
 
 .card .price_wrapper:hover label {
@@ -561,7 +563,7 @@ img, iframe {
 }
 
 .card .price_referance input[value="small"]:checked ~ .price_links > .price_wrapper label[class="small_price_label"] {
-  background-color: #F9A252;
+  background-color: #f9a252;
 }
 
 .card .price_referance input[value="small"]:checked ~ .price > .smallprice {
@@ -571,7 +573,7 @@ img, iframe {
 }
 
 .card .price_referance input[value="medium"]:checked ~ .price_links > .price_wrapper label[class="medium_price_label"] {
-  background-color: #F9A252;
+  background-color: #f9a252;
 }
 
 .card .price_referance input[value="medium"]:checked ~ .price > .medprice {
@@ -581,7 +583,7 @@ img, iframe {
 }
 
 .card .price_referance input[value="large"]:checked ~ .price_links > .price_wrapper label[class="large_price_label"] {
-  background-color: #F9A252;
+  background-color: #f9a252;
 }
 
 .card .price_referance input[value="large"]:checked ~ .price > .largeprice {
@@ -609,8 +611,8 @@ img, iframe {
   font-family: Oswald, sans-serif;
   font-size: 1.25em;
   cursor: pointer;
-  -webkit-box-shadow: inset 0 0 0 0 #F9A252;
-          box-shadow: inset 0 0 0 0 #F9A252;
+  -webkit-box-shadow: inset 0 0 0 0 #f9a252;
+          box-shadow: inset 0 0 0 0 #f9a252;
   -webkit-transition: ease-out 0.5s;
   -webkit-transition: ease-in-out 0.5s;
   transition: ease-in-out 0.5s;
@@ -618,8 +620,8 @@ img, iframe {
 
 #menu_links label:hover {
   text-decoration: underline;
-  -webkit-box-shadow: inset 400px 0 0 1px #F9A252;
-          box-shadow: inset 400px 0 0 1px #F9A252;
+  -webkit-box-shadow: inset 400px 0 0 1px #f9a252;
+          box-shadow: inset 400px 0 0 1px #f9a252;
 }
 
 input[value="pizza"]:checked ~ #pizza_menu {
@@ -628,7 +630,7 @@ input[value="pizza"]:checked ~ #pizza_menu {
 }
 
 input[value="pizza"]:checked ~ #menu_links label[for="radioPizza"] {
-  background-color: #F9A252;
+  background-color: #f9a252;
 }
 
 #menu_referance {
@@ -650,7 +652,7 @@ input[value="pasta"]:checked ~ #pasta_menu {
 }
 
 input[value="pasta"]:checked ~ #menu_links label[for="radioPasta"] {
-  background-color: #F9A252;
+  background-color: #f9a252;
 }
 
 input[value="drinks"]:checked ~ #drink_menu {
@@ -659,7 +661,7 @@ input[value="drinks"]:checked ~ #drink_menu {
 }
 
 input[value="drinks"]:checked ~ #menu_links label[for="radioDrinks"] {
-  background-color: #F9A252;
+  background-color: #f9a252;
 }
 
 .last_card_tablet {

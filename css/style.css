@@ -10,7 +10,8 @@ p {
   font-family: Oswald;
 }
 
-img, iframe {
+img,
+iframe {
   max-width: 100%;
 }
 
@@ -21,8 +22,8 @@ img, iframe {
   position: relative;
   -webkit-filter: grayscale(80%);
           filter: grayscale(80%);
-  -webkit-transition: all 0.3S ease-in-out;
-  transition: all 0.3S ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   opacity: 1;
 }
 
@@ -71,7 +72,8 @@ p {
   font-family: Oswald;
 }
 
-img, iframe {
+img,
+iframe {
   max-width: 100%;
 }
 
@@ -82,8 +84,8 @@ img, iframe {
   position: relative;
   -webkit-filter: grayscale(80%);
           filter: grayscale(80%);
-  -webkit-transition: all 0.3S ease-in-out;
-  transition: all 0.3S ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   opacity: 1;
 }
 
@@ -195,19 +197,19 @@ img, iframe {
   color: black;
   font-weight: 800;
   text-decoration: none;
-  background-color: #B14E4E;
+  background-color: #b14e4e;
   place-self: center;
   max-width: 125px;
   margin: 3px;
   width: 50%;
   font-size: 13px;
   height: 20px;
-  -webkit-box-shadow: 1px 1px 4px 0px #B14E4E;
-          box-shadow: 1px 1px 4px 0px #B14E4E;
+  -webkit-box-shadow: 1px 1px 4px 0px #b14e4e;
+          box-shadow: 1px 1px 4px 0px #b14e4e;
 }
 
 #mobile #info > a:hover {
-  background-color: #F9A252;
+  background-color: #f9a252;
 }
 
 #mobile #info p {
@@ -350,7 +352,7 @@ img, iframe {
   }
   .header_logo > p {
     font-size: 1.5em;
-    text-shadow: 1px 1px 1px #B14E4E;
+    text-shadow: 1px 1px 1px #b14e4e;
   }
   .header_logo > #desktop_header > #desktop_menu > a {
     text-decoration: none;
@@ -468,11 +470,11 @@ img, iframe {
   max-width: 400px;
   margin-bottom: 50px;
   margin-top: 25px;
-  background-color: #B14E4E;
+  background-color: #b14e4e;
 }
 
 .order_now:hover {
-  background-color: #F9A252;
+  background-color: #f9a252;
 }
 
 .order_now a {
@@ -493,7 +495,7 @@ img, iframe {
   margin-top: 50px;
   place-items: center;
   text-align: center;
-  color: #B14E4E;
+  color: #b14e4e;
   min-height: auto;
   max-width: 95%;
 }
@@ -512,7 +514,7 @@ img, iframe {
 
 #awards #awards_section h1 {
   position: relative;
-  text-shadow: 1px 1px #F9A252;
+  text-shadow: 1px 1px #f9a252;
   font-size: 1.5rem;
   font-weight: 800;
   margin: 10px;
@@ -586,9 +588,9 @@ img, iframe {
   margin-right: 15px;
 }
 
-#line {
+.line {
   place-self: center;
-  background-color: #B14E4E;
+  background-color: #b14e4e;
   width: 85%;
   height: 2px;
   margin: 5px;
@@ -618,7 +620,7 @@ img, iframe {
 
 #contactinfo a {
   text-decoration: none;
-  color: #B14E4E;
+  color: #b14e4e;
 }
 
 #contactinfo h1 {
@@ -672,14 +674,15 @@ img, iframe {
   font-family: Oswald;
   margin-left: 40%;
   font-weight: 700;
-  background-color: #B14E4E;
+  background-color: #b14e4e;
 }
 
 #contactinfo ~ form button:active {
-  background-color: #F9A252;
+  background-color: #f9a252;
 }
 
-#contactinfo ~ form > input, #contactinfo ~ form textarea {
+#contactinfo ~ form > input,
+#contactinfo ~ form textarea {
   font-family: Oswald;
   text-align: left;
   font-size: 14px;
