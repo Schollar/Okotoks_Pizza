@@ -16,7 +16,7 @@ img, iframe {
 
 .image_hover {
   width: 100%;
-  z-index: 7;
+  z-index: 2;
   position: relative;
   -webkit-filter: grayscale(80%);
           filter: grayscale(80%);
@@ -61,7 +61,7 @@ img, iframe {
 
 .image_hover {
   width: 100%;
-  z-index: 7;
+  z-index: 2;
   position: relative;
   -webkit-filter: grayscale(80%);
           filter: grayscale(80%);

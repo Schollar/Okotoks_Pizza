@@ -265,7 +265,13 @@
     } 
 }
 // GALLERY STYLING
+#gallery_title {
 
+    font-family: $headingfont;
+    font-size: 2em;
+    text-decoration: underline;
+    margin-bottom: 50px;
+}
 #gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -273,11 +279,10 @@
     column-gap: 15px;
     width: 95%;
     margin-bottom: 50px;
-    
+
     >.border_wrapper>img {
         width: 100%;
         height: 100%;
-        z-index: 9;
         margin-bottom: 15px;
     }
 }
