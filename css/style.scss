@@ -18,6 +18,7 @@
     position: relative;
     justify-items: center;
     grid-template-rows: 1fr;
+    margin-bottom: 50px;
     row-gap: 10px;
     width: 95%;
     max-width: fit-content;
@@ -333,8 +334,12 @@
     }
 
     #contactinfo {
-        font-size: 0.75em;
-        margin-right: 20px;
+        margin-right: 150px;
+
+
+        h1 {
+            font-size: 2.5em;
+        }
     }
 
     #awards {
@@ -374,7 +379,9 @@
         }
 
     }
-
+    #top_content {
+        margin-top: 200px;
+    }
 
     #line {
         width: 75%;

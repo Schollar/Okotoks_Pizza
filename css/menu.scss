@@ -92,7 +92,6 @@
   .price_wrapper label {
   margin: 10px;
   padding: 0px 3px;
-  border-radius: 5px;
   font-family: Oswald, sans-serif;
   font-size: 1em;
   cursor: pointer;
@@ -163,7 +162,6 @@ place-items: center;
 #menu_links label {
     margin: 5px;
     padding: 0px 10px 2px;
-    border-radius: 10px;
     font-family: Oswald, sans-serif;
     font-size: 1.25em;
     cursor: pointer;
@@ -236,6 +234,9 @@ input[value="drinks"]:checked {
 .last_card {
   height: 200px;
 }
+.last_card_desktop {
+  display: none;
+}
 
 // START OF TABLET CSS
 @media only screen and (min-width: 650px) {
@@ -252,3 +253,8 @@ input[value="drinks"]:checked {
     top: 150px;
   }
 }
+  .last_card_desktop {
+    display: inline;
+    height: 200px;
+  }
+

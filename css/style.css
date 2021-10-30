@@ -106,7 +106,7 @@ img, iframe {
       grid-template-columns: 2fr 1fr;
   height: 60px;
   min-width: 100%;
-  background-color: #CCB6E7;
+  background-color: #f8f5ee;
   overflow-x: hidden;
   z-index: 4;
 }
@@ -125,8 +125,9 @@ img, iframe {
   min-width: 100%;
   place-items: center;
   height: 6vh;
-  background-color: #CCB6E7;
+  background-color: #f8f5ee;
   color: black;
+  border-bottom: 1px solid black;
 }
 
 .header_logo img {
@@ -162,15 +163,15 @@ img, iframe {
   color: black;
   font-weight: 800;
   text-decoration: none;
-  background-color: #b78aee8c;
+  background-color: #B14E4E;
   place-self: center;
   max-width: 125px;
   margin: 3px;
   width: 50%;
   font-size: 13px;
   height: 20px;
-  -webkit-box-shadow: 1px 1px 4px 0px black;
-          box-shadow: 1px 1px 4px 0px black;
+  -webkit-box-shadow: 1px 1px 4px 0px #B14E4E;
+          box-shadow: 1px 1px 4px 0px #B14E4E;
 }
 
 #info > a:hover {
@@ -227,7 +228,7 @@ img, iframe {
   bottom: 60px;
   min-height: 25%;
   right: -1px;
-  background-color: #CCB6E7ee;
+  background-color: #f8f5eeee;
   justify-items: center;
   z-index: 9;
   -webkit-transform: translate(100%, 0);
@@ -301,8 +302,8 @@ img, iframe {
     margin-top: 150px;
   }
   .header_logo {
-    -ms-grid-columns: 1fr 2fr 2fr;
-        grid-template-columns: 1fr 2fr 2fr;
+    -ms-grid-columns: 1fr 1fr 2fr;
+        grid-template-columns: 1fr 1fr 2fr;
     height: 100px;
     position: fixed;
     top: 0;
@@ -310,17 +311,17 @@ img, iframe {
     z-index: 5;
   }
   .header_logo > img {
-    width: 65%;
+    width: 55%;
   }
   .header_logo > p {
     font-size: 1.5em;
-    text-shadow: 2px 2px 1px #b78aee8c;
+    text-shadow: 1px 1px 1px #B14E4E;
   }
   .header_logo > #desktop_header > #desktop_menu > a {
     text-decoration: none;
     margin-left: 20px;
     color: black;
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: 700;
   }
   .header_logo > #desktop_header > #desktop_menu > a:hover {
@@ -406,6 +407,7 @@ img, iframe {
   justify-items: center;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
+  margin-bottom: 50px;
   row-gap: 10px;
   width: 95%;
   max-width: -webkit-fit-content;
@@ -723,8 +725,10 @@ img, iframe {
     max-width: 85%;
   }
   #contactinfo {
-    font-size: 0.75em;
-    margin-right: 20px;
+    margin-right: 150px;
+  }
+  #contactinfo h1 {
+    font-size: 2.5em;
   }
   #awards h1 {
     max-width: 90%;
@@ -751,6 +755,9 @@ img, iframe {
   }
   #awards #awards_section h1 {
     max-width: 80%;
+  }
+  #top_content {
+    margin-top: 200px;
   }
   #line {
     width: 75%;

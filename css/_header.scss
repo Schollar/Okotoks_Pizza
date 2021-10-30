@@ -26,6 +26,7 @@
         height: 6vh;
         background-color: $bgcolor;
         color: black;
+        border-bottom: 1px solid black;
     
         img {
             width: 75px;
@@ -55,14 +56,14 @@
         color: $fontcolor;
         font-weight: 800;
         text-decoration: none;
-        background-color: $phonebuttonclr;
+        background-color: $secondary;
         place-self: center;
         max-width: 125px;
         margin: 3px;
         width: 50%;
         font-size: 13px;
         height: 20px;
-        box-shadow: 1px 1px 4px 0px $fontcolor;
+        box-shadow: 1px 1px 4px 0px $secondary;
 
         &:hover {
             background-color: $hoverclr;
@@ -204,7 +205,7 @@
         margin-top: 150px;
     }
     .header_logo {
-        grid-template-columns: 1fr 2fr 2fr;
+        grid-template-columns: 1fr 1fr 2fr;
         height: 100px;
         position: fixed;
         top: 0;
@@ -212,12 +213,12 @@
         z-index: 5;
 
         >img {
-            width: 65%;
+            width: 55%;
         }
 
         >p {
             font-size: 1.5em;
-            text-shadow: 2px 2px 1px $phonebuttonclr;
+            text-shadow: 1px 1px 1px $secondary;
         }
         >#desktop_header>#desktop_menu {
 
@@ -225,7 +226,7 @@
                 text-decoration: none;
                 margin-left: 20px;
                 color: black;
-                font-size: 1.5em;
+                font-size: 1.25em;
                 font-weight: 700;
 
                 &:hover {
