@@ -23,14 +23,14 @@
     grid-auto-flow: column;
     min-width: 100%;
     place-items: center;
-    height: 6vh;
+    height: 10vh;
     background-color: $bgcolor;
     color: black;
     border-bottom: 1px solid black;
 
     img {
         width: 75px;
-        margin-left: 2px;
+        margin-left: 25px;
         margin-top: 2px;
     }
 
@@ -38,8 +38,25 @@
         text-align: center;
         font-family: Oswald, sans-serif;
         font-weight: 700;
-        font-size: 11px;
+        width: 80%;
+        font-size: 0.65em;
         margin-top: 2px;
+    }
+
+    > .info {
+        display: grid;
+        justify-self: start;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        column-gap: 15px;
+
+        > h3 {
+            font-size: 0.65em;
+        }
+        > .phone {
+            width: 100%;
+            text-align: center;
+        }
     }
 }
 #navbar {
@@ -50,28 +67,11 @@
 #mobile {
     border-top: 1px solid black;
 
-    #info {
+    > .info {
         display: grid;
         row-gap: 2.5px;
         text-align: center;
 
-        > a {
-            color: $fontcolor;
-            font-weight: 800;
-            text-decoration: none;
-            background-color: $secondary;
-            place-self: center;
-            max-width: 125px;
-            margin: 3px;
-            width: 50%;
-            font-size: 13px;
-            height: 20px;
-            box-shadow: 1px 1px 4px 0px $secondary;
-
-            &:hover {
-                background-color: $hoverclr;
-            }
-        }
         p {
             font-size: 13px;
             color: $fontcolor;
@@ -79,6 +79,24 @@
             text-align: center;
             margin-left: 10px;
         }
+    }
+}
+
+.phone {
+    color: $fontcolor;
+    font-weight: 800;
+    text-decoration: none;
+    background-color: $secondary;
+    place-self: center;
+    max-width: 125px;
+    margin: 3px;
+    width: 50%;
+    font-size: 13px;
+    height: 20px;
+    box-shadow: 1px 1px 4px 0px $secondary;
+
+    &:hover {
+        background-color: $hoverclr;
     }
 }
 
@@ -177,10 +195,19 @@
             width: 100px;
         }
     }
+    .phone {
+        pointer-events: none;
+    }
 
-    #info {
-        > a {
-            pointer-events: none;
+    .header_logo {
+        > p {
+            font-size: 0.85em;
+        }
+        > .info {
+            > h3 {
+                font-size: 0.85em;
+                margin-right: 25px;
+            }
         }
     }
 }
@@ -193,7 +220,7 @@
         margin-top: 150px;
     }
     .header_logo {
-        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-columns: 100px 1fr 1fr 1.5fr;
         height: 100px;
         position: fixed;
         top: 0;
@@ -201,12 +228,19 @@
         z-index: 5;
 
         > img {
-            width: 55%;
+            width: 100%;
         }
 
         > p {
-            font-size: 1.5em;
+            font-size: 1em;
             text-shadow: 1px 1px 1px $secondary;
+            width: 75%;
+        }
+        .info {
+            > h3 {
+                margin-right: 0;
+                font-size: 1em;
+            }
         }
         > #desktop_header > #desktop_menu {
             > a {

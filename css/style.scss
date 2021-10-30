@@ -113,13 +113,6 @@
     margin-top: 50px;
     margin-bottom: 50px;
 
-    h1 {
-        font-family: $headingfont;
-        text-decoration: underline;
-        font-size: 2em;
-        text-align: left;
-        margin-bottom: 30px;
-    }
     p {
         color: black;
         text-align: left;
@@ -174,13 +167,6 @@
     a {
         text-decoration: none;
         color: $secondary;
-    }
-
-    h1 {
-        font-family: $headingfont;
-        font-size: 2em;
-        margin-bottom: 40px;
-        text-decoration: underline;
     }
 
     ul {
@@ -269,10 +255,9 @@
 #location {
     display: grid;
     place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
     > h1 {
-        font-family: $headingfont;
-        font-size: 2em;
-        text-decoration: underline;
         margin-bottom: 50px;
         margin-top: 50px;
     }
@@ -369,5 +354,14 @@
 
     #philosophy {
         grid-template-rows: 0fr 0fr 300px;
+    }
+
+    #location {
+        grid-template-columns: 1fr 2fr;
+        column-gap: 0px;
+
+        iframe {
+            max-width: 80%;
+        }
     }
 }

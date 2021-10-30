@@ -37,6 +37,13 @@ iframe {
         transform: translateX(-5px) translateY(-5px);
     }
 }
+h1 {
+    font-family: $headingfont;
+    text-decoration: underline;
+    font-size: 2em;
+    text-align: left;
+    margin-bottom: 30px;
+}
 
 .image_border {
     position: absolute;
