@@ -495,12 +495,9 @@ h1 {
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   margin-bottom: 50px;
-  margin-top: 50px;
   row-gap: 10px;
   width: 95%;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
+  max-width: 600px;
 }
 
 #top_content > img {
@@ -832,7 +829,7 @@ h1 {
   #awards #awards_section h1 {
     max-width: 80%;
   }
-  #top_content {
+  #page_slogan {
     margin-top: 200px;
   }
   #line {
