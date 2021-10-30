@@ -47,7 +47,12 @@
     align-self: end;
     justify-self: end;
 }
-#info {
+
+#mobile {
+
+    border-top: 1px solid black;
+
+    #info {
     display: grid;
     row-gap: 2.5px;
     text-align: center;
@@ -77,6 +82,9 @@
         margin-left: 10px;
     }
 }
+
+}
+
 
 
 #menubox {
@@ -185,14 +193,16 @@
 #logo {
    
     height: 50px;
-    
-
-    img {
+    >img {
         width: 100px;
     }
-
 }
 
+#info {
+        >a {
+            pointer-events: none;
+        }
+    }
 
 
 }

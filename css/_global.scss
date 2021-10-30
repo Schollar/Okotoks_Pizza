@@ -28,6 +28,7 @@ img, iframe {
     position: relative;
     filter: grayscale(80%);
     transition: all 0.3S ease-in-out;
+    opacity: 1;
         
         &:hover {
             filter: grayscale(0%);
@@ -37,17 +38,29 @@ img, iframe {
 
 .image_border {
     position: absolute;
+    display: grid;
+    place-items: center;
     width:calc(100% - 3px);
     top: 0px;
     left: 0px;
     height: calc(100% - 3px);
     border: 1px solid black;
     z-index: 1;
+
+        img{
+            width: 75%;
+            height: 75%;
+        }
     }
 
 
 
 .border_wrapper {
+    position: relative;
+    height: 100%;
+}
+
+.border_wrapper_flay {
     position: relative;
     height: 100%;
 }
