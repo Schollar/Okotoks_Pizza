@@ -149,9 +149,10 @@
         p {
             margin-bottom: 40px;
         }
-
-        >img {
-            max-width: 85%;
+        ~.border_wrapper img {
+            height: 100%;
+            width: 10%;
+            
         }
     }
 }
