@@ -37,12 +37,12 @@ iframe {
         transform: translateX(-5px) translateY(-5px);
     }
 }
-h1 {
+.article_title {
     font-family: $headingfont;
     text-decoration: underline;
     font-size: 2em;
     text-align: left;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .image_border {
@@ -59,6 +59,7 @@ h1 {
     img {
         width: 75%;
         height: 75%;
+        max-height: 350px;
     }
 }
 

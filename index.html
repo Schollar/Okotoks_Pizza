@@ -75,8 +75,8 @@
             </header>
         </section>
         <div id="page_slogan">
-            <h1>Okotok's Pizza</h1>
-            <h2>We Come Fast. No apologies</h2>
+            <h2>Okotok's Pizza</h2>
+            <h3>We Come <span class="red">Fast</span>. No apologies</h3>
         </div>
         <section id="top_content">
 
@@ -89,7 +89,7 @@
             <a href="/pages/menu.html">ORDER NOW</a>
         </div>
         <div class="line"></div>
-        <h1>Our Media</h1>
+        <h1 class="article_title">Our Media</h1>
         <section id="awards">
             <iframe src="https://www.youtube.com/embed/xbHbcmQIcAQ" title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -114,7 +114,7 @@
                     <img src="/images/owner.jpg" alt="A man putting the last bit of topping's on a peice of pizza">
                 </div>
                 <article>
-                    <h1>Our Story</h1>
+                    <h1 class="article_title">Our Story</h1>
                     <p> It’s a simple equation that keeps our customers coming back for more. Always fresh toppings and
                         great
                         service plus low, low prices equals great pizza. Here at Okotok's Pizza, we strive to give our
@@ -138,7 +138,7 @@
                 </article>
             </div>
             <article id="philosophy">
-                <h1>Our Philosophy</h1>
+                <h1 class="article_title">Our Philosophy</h1>
                 <p>Okotok's Pizza is relying on the traditions, but at the same time always looking to renew
                     their offering to customers. We are not just a pizza place, but we are committed to creating a
                     complete experience to our customers: a comfortable environment, friendly service, stylish menu and
@@ -155,56 +155,71 @@
             </article>
         </section>
         <div class="line"></div>
-        <h1 id="gallery_title">Gallery</h1>
+        <h1 id="gallery_title" class="article_title">Gallery</h1>
         <section id="gallery">
             <div class="border_wrapper">
-                <img class="image_hover" src="images/chef.jpg" alt="Our chef cutting a fresh backed pizza">
+                <a href="#image1">
+                    <img class="image_hover" src="images/chef.jpg" alt="Our chef cutting a fresh backed pizza">
+                </a>
                 <div class="image_border"><img src="images/thatsbobbyflay.gif"
                         alt="A gif of Randy from southpark saying 'stan thats bobbly flay'">
                 </div>
             </div>
             <div class="border_wrapper">
-                <img class="image_hover" src="images/oven.jpg"
-                    alt="Our fire cooking oven with 2 fresh cooked pizza's in front">
+                <a href="#image2">
+                    <img class="image_hover" src="images/oven.jpg"
+                        alt="Our fire cooking oven with 2 fresh cooked pizza's in front"></a>
                 <div class="image_border"><img src="images/bobbyflay3.gif" alt="A gif of bobby flay on a cooking show">
                 </div>
             </div>
             <div class="border_wrapper">
-                <img class="image_hover" src="images/oven2.jpg"
-                    alt="Our second fire cooking oven in the back kitchen area">
+                <a href="#image3">
+                    <img class="image_hover" src="images/oven2.jpg"
+                        alt="Our second fire cooking oven in the back kitchen area">
+                </a>
                 <div class="image_border">
                     <img src="images/stepbrothers.gif" alt="A gif of a quote from stepbrothers">
                 </div>
             </div>
             <div class="border_wrapper">
-                <img class="image_hover" src="images/3pizzas.jpg" alt="Three freshly cooked pizza's">
+                <a href="#image4">
+                    <img class="image_hover" src="images/3pizzas.jpg" alt="Three freshly cooked pizza's">
+                </a>
                 <div class="image_border">
                     <img src="images/southpark2.gif" alt="Gif from southpark, Randy sees bobby flay">
                 </div>
             </div>
             <div class="border_wrapper">
-                <img class="image_hover" src="images/counter.jpg"
-                    alt="Our front counter with our menu on tv's mounted above">
+                <a href="#image5">
+                    <img class="image_hover" src="images/counter.jpg"
+                        alt="Our front counter with our menu on tv's mounted above">
+                </a>
                 <div class="image_border">
                     <img src="images/scoobydoo.gif" alt="A gif of bobby flay on a scooby doo episode">
                 </div>
             </div>
             <div class="border_wrapper">
-                <img class="image_hover" src="images/sign.jpg"
-                    alt="Two pizza's next to a sign that reads Okotoks Artisan Pizza">
+                <a href="#image6">
+
+                    <img class="image_hover" src="images/sign.jpg"
+                        alt="Two pizza's next to a sign that reads Okotoks Artisan Pizza">
+                </a>
                 <div class="image_border">
                     <img src="images/flayworkingout.gif" alt="A gif of bobby flay working out">
                 </div>
             </div>
             <div class="border_wrapper">
-                <img class="image_hover" src="images/inside.jpg" alt="The Inside of our restraunt.">
+                <a href="#image7">
+
+                    <img class="image_hover" src="images/inside.jpg" alt="The Inside of our restraunt.">
+                </a>
                 <div class="image_border"></div>
             </div>
         </section>
         <div class="line"></div>
         <section id="contact">
             <article id="contactinfo">
-                <h1>Contact Us</h1>
+                <h1 class="article_title">Contact Us</h1>
                 <ul>
                     <li>Phone Number: <a id="contact_number" href="tel">555-555-1234</a></li>
                     <li>Email: <a href="mailto:okotokspizza@thisisawebsite.ml">okotokspizza@thisisawebsite.ml</a></li>
@@ -233,8 +248,29 @@
                 </ul>
             </form>
         </section>
+        <a href="#gallery" class="lightbox" id="image1">
+            <span class="lightbox_images" style="background-image: url('/images/chef.jpg')"></span>
+        </a>
+        <a href="#gallery" class="lightbox" id="image2">
+            <span class="lightbox_images" style="background-image: url('/images/oven.jpg')"></span>
+        </a>
+        <a href="#gallery" class="lightbox" id="image3">
+            <span class="lightbox_images" style="background-image: url('/images/oven2.jpg')"></span>
+        </a>
+        <a href="#gallery" class="lightbox" id="image4">
+            <span class="lightbox_images" style="background-image: url('/images/3pizzas.jpg')"></span>
+        </a>
+        <a href="#gallery" class="lightbox" id="image5">
+            <span class="lightbox_images" style="background-image: url('/images/counter.jpg')"></span>
+        </a>
+        <a href="#gallery" class="lightbox" id="image6">
+            <span class="lightbox_images" style="background-image: url('/images/sign.jpg')"></span>
+        </a>
+        <a href="#gallery" class="lightbox" id="image7">
+            <span class="lightbox_images" style="background-image: url('/images/inside.jpg')"></span>
+        </a>
         <div class="line"></div>
-        <h1>Locate Us</h1>
+        <h1 class="article_title">Locate Us</h1>
         <section id="location">
             <div class="wrapper">
                 <p>Address:</p>

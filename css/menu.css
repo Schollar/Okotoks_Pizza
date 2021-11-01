@@ -34,12 +34,12 @@ iframe {
           transform: translateX(-5px) translateY(-5px);
 }
 
-h1 {
+.article_title {
   font-family: "Exo 2";
   text-decoration: underline;
   font-size: 2em;
   text-align: left;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .image_border {
@@ -58,6 +58,7 @@ h1 {
 .image_border img {
   width: 75%;
   height: 75%;
+  max-height: 350px;
 }
 
 .border_wrapper {
@@ -104,12 +105,12 @@ iframe {
           transform: translateX(-5px) translateY(-5px);
 }
 
-h1 {
+.article_title {
   font-family: "Exo 2";
   text-decoration: underline;
   font-size: 2em;
   text-align: left;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .image_border {
@@ -128,6 +129,7 @@ h1 {
 .image_border img {
   width: 75%;
   height: 75%;
+  max-height: 350px;
 }
 
 .border_wrapper {
@@ -379,9 +381,6 @@ h1 {
 @media only screen and (min-width: 1024px) {
   #mobile {
     display: none;
-  }
-  #top_content {
-    margin-top: 150px;
   }
   .header_logo {
     -ms-grid-columns: 100px 1fr 1fr 1.5fr;
