@@ -23,13 +23,13 @@
     grid-auto-flow: column;
     min-width: 100%;
     place-items: center;
-    height: 10vh;
+    height: 5vh;
     background-color: $bgcolor;
     color: black;
     border-bottom: 1px solid black;
 
     img {
-        width: 75px;
+        width: 90px;
         margin-left: 25px;
         margin-top: 2px;
     }
@@ -39,7 +39,7 @@
         font-family: Oswald, sans-serif;
         font-weight: 700;
         width: 80%;
-        font-size: 0.65em;
+        font-size: 0.75em;
         margin-top: 2px;
     }
 
@@ -51,7 +51,7 @@
         column-gap: 15px;
 
         > h3 {
-            font-size: 0.65em;
+            font-size: 0.7em;
         }
         > .phone {
             width: 100%;
