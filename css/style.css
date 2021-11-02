@@ -307,6 +307,10 @@ iframe {
     font-size: 0.85em;
     margin-right: 25px;
   }
+  .header_logo > .info > .phone {
+    font-size: 1em;
+    padding-bottom: 4px;
+  }
 }
 
 @media only screen and (min-width: 650px) and (min-width: 1024px) {
@@ -334,22 +338,19 @@ iframe {
     margin-right: 0;
     font-size: 1em;
   }
-  .header_logo > #desktop_header > #desktop_menu > a {
+  #desktop_header {
+    display: -ms-grid;
+    display: grid;
+  }
+  #desktop_header > #desktop_menu > a {
     text-decoration: none;
     margin-left: 20px;
     color: black;
     font-size: 1.25em;
     font-weight: 700;
   }
-  .header_logo > #desktop_header > #desktop_menu > a:hover {
+  #desktop_header > #desktop_menu > a:hover {
     text-decoration: underline;
-  }
-}
-
-@media only screen and (min-width: 650px) {
-  #desktop_header {
-    display: -ms-grid;
-    display: grid;
   }
 }
 

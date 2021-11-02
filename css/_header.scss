@@ -207,10 +207,10 @@
                 font-size: 0.85em;
                 margin-right: 25px;
             }
-            // > .phone {
-            //     font-size: 1em;
-            //     padding-bottom: 4px;
-            // }
+            > .phone {
+                font-size: 1em;
+                padding-bottom: 4px;
+            }
         }
     }
 
@@ -242,8 +242,12 @@
                     font-size: 1em;
                 }
             }
+        }
 
-            > #desktop_header > #desktop_menu {
+        #desktop_header {
+            display: grid;
+
+            > #desktop_menu {
                 > a {
                     text-decoration: none;
                     margin-left: 20px;
@@ -257,8 +261,5 @@
                 }
             }
         }
-    }
-    #desktop_header {
-        display: grid;
     }
 }
